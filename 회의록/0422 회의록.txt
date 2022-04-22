@@ -1,0 +1,14 @@
+0422 회의록
+
+회의때 한거
+1. 서로 use case diagram 그리고 피드백함
+
+다음 회의 준비물
+1. use case diagram 보완해서 다음 회의때까지 가져오기
+2. reqeuirement list 쓰는법 알아오기.
+3. actor, user description 쓰는법 알아오기.
+4. 어물쩡하게 어느 requirement, actor, user들어갈지 생각해오기.
+
+다음 회의 일정
+1. 다음회의는 오프라인. 4월 24일 일요일 16시 나무.
+
