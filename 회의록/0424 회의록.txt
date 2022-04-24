@@ -1,0 +1,20 @@
+0424 회의록
+오프라인으로 진행하였음. 16시~21시
+
+진행사항
+1. 각자 use case diagram초안 그려온 것을 통해 제출용 초안 작성
+2. Requirement list를 functional, non-functional로 구분하여 use case와 이어줌.
+3. Actor Description 작성
+
+앞으로 해야될거
+1. use case description 작성
+2. ui screen design
+3. 보고서 작성
+
+다음회의 때 해야할거
+1. ui screen design툴 정하기
+2. 몇 개의 screen이 나오는지 파악 후 분업
+
+다음회의
+4월 26일 화요일 저녁
+
