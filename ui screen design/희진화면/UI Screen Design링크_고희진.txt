@@ -1,0 +1,12 @@
+1. 로그인화면
+ - ID, PW창
+ - 회원가입 버튼
+https://www.figma.com/file/7yqQladPUY8lPHgRJMtCx4/%EB%A1%9C%EA%B7%B8%EC%9D%B8?node-id=0%3A1
+
+
+2. 구매내역 조회
+ - 구매내역
+ - 구매 만족도 평가
+ - 상품환불 버튼(한방에 환불 진행)
+ - 상품 구매내역 삭제
+https://www.figma.com/file/Js3gwBtOm3Vd3GQomcOFcS/%EA%B5%AC%EB%A7%A4%EB%82%B4%EC%97%AD-%EC%A1%B0%ED%9A%8C?node-id=0%3A1
