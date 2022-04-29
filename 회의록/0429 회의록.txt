@@ -1,0 +1,10 @@
+0429 회의록
+상수 쓰리팝 피시방
+
+이번회의 한거
+1. 각자 그려온 UI Screen Design 병합
+2. Use Case Description 작성
+3. 보고서 작성
+
+끝!
+
