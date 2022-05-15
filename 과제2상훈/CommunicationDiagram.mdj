@@ -3057,13 +3057,13 @@
 												"$ref": "AAAAAAGAxpvc9EPTJEo="
 											},
 											"font": "Arial;13;0",
-											"left": 868.7099609375,
+											"left": 863.602783203125,
 											"top": 452,
-											"width": 159.580078125,
+											"width": 243.79443359375,
 											"height": 13,
-											"alpha": 0.10945093720961432,
-											"distance": 91.54780172128658,
-											"text": "4 *[*] : getProductDetails( )"
+											"alpha": 0.07796662776505406,
+											"distance": 128.39003076563228,
+											"text": "4 *[For All Product's] : getProductDetails( )"
 										},
 										{
 											"_type": "NodeLabelView",
@@ -4138,7 +4138,7 @@
 							},
 							"sequenceNumber": "4",
 							"arguments": " ",
-							"iteration": "*"
+							"iteration": "For All Product's"
 						},
 						{
 							"_type": "UMLMessage",
@@ -4733,9 +4733,9 @@
 												"$ref": "AAAAAAGAxp4SO2981Rc="
 											},
 											"font": "Arial;13;0",
-											"left": 256.45703125,
+											"left": 256.72998046875,
 											"top": 285,
-											"width": 118.7109375,
+											"width": 115.83544921875,
 											"height": 13,
 											"text": "상품 판매 통계 출력"
 										},
@@ -4748,7 +4748,7 @@
 											"font": "Arial;13;1",
 											"left": 237,
 											"top": 285,
-											"width": 14.45703125,
+											"width": 14.72998046875,
 											"height": 13,
 											"text": "sd"
 										}
@@ -4756,7 +4756,7 @@
 									"font": "Arial;13;0",
 									"left": 232,
 									"top": 280,
-									"width": 641,
+									"width": 753,
 									"height": 265,
 									"nameLabel": {
 										"$ref": "AAAAAAGAxp4SO2991NM="
@@ -6549,13 +6549,13 @@
 												"$ref": "AAAAAAGAxqzWbMHW+90="
 											},
 											"font": "Arial;13;0",
-											"left": 711.2099609375,
+											"left": 726.602783203125,
 											"top": 392,
-											"width": 159.580078125,
+											"width": 256.79443359375,
 											"height": 13,
-											"alpha": 0.22560120809439052,
-											"distance": 62.5859409132754,
-											"text": "2 *[*] : getProductDetails( )"
+											"alpha": 0.11153517522486338,
+											"distance": 125.78155667664477,
+											"text": "2 *[For User's Product] : getProductDetails( )"
 										},
 										{
 											"_type": "NodeLabelView",
@@ -6971,7 +6971,7 @@
 								"$ref": "AAAAAAGAxqzWbMHIx4Y="
 							},
 							"arguments": " ",
-							"iteration": "*"
+							"iteration": "For User's Product"
 						},
 						{
 							"_type": "UMLMessage",
@@ -7357,9 +7357,9 @@
 												"$ref": "AAAAAAGAxq6lVuYKL48="
 											},
 											"font": "Arial;13;0",
-											"left": 232.45703125,
+											"left": 232.72998046875,
 											"top": 285,
-											"width": 162.28125,
+											"width": 158.447265625,
 											"height": 13,
 											"text": "판매 완료된 상품 내역 조회"
 										},
@@ -7372,7 +7372,7 @@
 											"font": "Arial;13;1",
 											"left": 213,
 											"top": 285,
-											"width": 14.45703125,
+											"width": 14.72998046875,
 											"height": 13,
 											"text": "sd"
 										}

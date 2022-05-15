@@ -2121,7 +2121,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 272.72998046875,
-											"top": 125,
+											"top": 309,
 											"width": 53,
 											"height": 13,
 											"text": "회원가입"
@@ -2134,7 +2134,7 @@
 											},
 											"font": "Arial;13;1",
 											"left": 253,
-											"top": 125,
+											"top": 309,
 											"width": 14.72998046875,
 											"height": 13,
 											"text": "sd"
@@ -2142,9 +2142,9 @@
 									],
 									"font": "Arial;13;0",
 									"left": 248,
-									"top": 120,
+									"top": 304,
 									"width": 801,
-									"height": 592,
+									"height": 297,
 									"nameLabel": {
 										"$ref": "AAAAAAGAxo6vwsRRVDQ="
 									},
@@ -4427,9 +4427,9 @@
 												"$ref": "AAAAAAGAxrBgoR9xBXA="
 											},
 											"font": "Arial;13;0",
-											"left": 675.37548828125,
+											"left": 673.233154296875,
 											"top": 515,
-											"width": 98.2490234375,
+											"width": 102.53369140625,
 											"height": 13,
 											"alpha": 1.5707963267948966,
 											"distance": 10,
@@ -5857,11 +5857,11 @@
 											},
 											"font": "Arial;13;0",
 											"left": 706.451416015625,
-											"top": 478.5,
+											"top": 486.5,
 											"width": 278.09716796875,
 											"height": 13,
-											"alpha": -0.045423276476069106,
-											"distance": 154.1590088188167,
+											"alpha": -0.09709630463257173,
+											"distance": 154.72879499304582,
 											"text": "4 *[For  all  Member's ID] : getMemberDetail( )"
 										},
 										{
@@ -6639,7 +6639,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 248.72998046875,
-											"top": 101,
+											"top": 309,
 											"width": 53,
 											"height": 13,
 											"text": "회원탈퇴"
@@ -6652,7 +6652,7 @@
 											},
 											"font": "Arial;13;1",
 											"left": 229,
-											"top": 101,
+											"top": 309,
 											"width": 14.72998046875,
 											"height": 13,
 											"text": "sd"
@@ -6660,9 +6660,9 @@
 									],
 									"font": "Arial;13;0",
 									"left": 224,
-									"top": 96,
+									"top": 304,
 									"width": 692,
-									"height": 592,
+									"height": 273,
 									"nameLabel": {
 										"$ref": "AAAAAAGAxrPxIyV9hEI="
 									},
@@ -8637,7 +8637,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 192.72998046875,
-											"top": 197,
+											"top": 341,
 											"width": 79,
 											"height": 13,
 											"text": "판매의류등록"
@@ -8650,7 +8650,7 @@
 											},
 											"font": "Arial;13;1",
 											"left": 173,
-											"top": 197,
+											"top": 341,
 											"width": 14.72998046875,
 											"height": 13,
 											"text": "sd"
@@ -8658,9 +8658,9 @@
 									],
 									"font": "Arial;13;0",
 									"left": 168,
-									"top": 192,
+									"top": 336,
 									"width": 785,
-									"height": 592,
+									"height": 289,
 									"nameLabel": {
 										"$ref": "AAAAAAGAxrrp9ji4+vI="
 									},
@@ -12775,7 +12775,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 168.72998046875,
-											"top": 117,
+											"top": 373,
 											"width": 79,
 											"height": 13,
 											"text": "판매의류조회"
@@ -12788,7 +12788,7 @@
 											},
 											"font": "Arial;13;1",
 											"left": 149,
-											"top": 117,
+											"top": 373,
 											"width": 14.72998046875,
 											"height": 13,
 											"text": "sd"
@@ -12796,9 +12796,9 @@
 									],
 									"font": "Arial;13;0",
 									"left": 144,
-									"top": 112,
-									"width": 817,
-									"height": 592,
+									"top": 368,
+									"width": 769,
+									"height": 193,
 									"nameLabel": {
 										"$ref": "AAAAAAGAxu34fT2L7T8="
 									},
