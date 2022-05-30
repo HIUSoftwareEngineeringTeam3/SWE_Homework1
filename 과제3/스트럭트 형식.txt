@@ -1,0 +1,29 @@
+1000이라고 되어있는거
+MAX_STRING으로 ㄱㄱ 왜냐면
+귀찮아서 1000으로 씀.
+
+struct MemberStruct{
+char memberName[MAX_STRING];
+char memberNumber[MAX_STRING];
+char memberID[MAX_STRING];
+char memberPWD[MAX_STRING];
+
+Product* sellingProductList;
+Prdouct* selledProductList		//포인터옮기기
+Product* boughtProductList;	//얕은복사
+
+Member* nextMemberNode;
+} typedef Member;
+
+struct ProductStruct{
+char productName[MAX_STRING];
+char madeCompanyName[MAX_STRING];
+char productPrice[MAX_STRING];
+int productQuantity;
+
+int satisfactionNumber;
+int satisfactionQuantity;
+Product* nextProductNode;
+}typedef Product;
+
+ 
