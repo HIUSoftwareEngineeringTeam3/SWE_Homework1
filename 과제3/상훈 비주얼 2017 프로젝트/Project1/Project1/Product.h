@@ -3,7 +3,9 @@
 #include <vector>
 #include <iostream>
 #include <fstream>
-#include "Member.h"
+
+class Member;
+
 using namespace std;
 
 class Product {
@@ -20,10 +22,17 @@ private:
 	static ofstream* out_fp;
 public:
 	Product(ofstream* fp);
-	Product(string pName,string companyName,int price, int quantity);
+	Product(string pName, string companyName, int price, int quantity);
 	string getProductName();
+	string getmadeCompanyName();
+	int getproductPrice();
 	Member* getSellingMember();
+	void printMyProducts();
+	void printBoughtProducts();
 	void evaluateSatisfaction(int evaluateNum);
 	void printStatistics();
 	float getAverageSatisfaction();
+	void printSoldProductList();
+	int remainProductQuantity();
+
 };

@@ -1,5 +1,12 @@
 #pragma once
-#include "Product.h"
+#include <string>
+#include <vector>
+#include <iostream>
+#include <fstream>
+
+using namespace std;
+
+class Product;
 
 class Member {
 private:
@@ -18,8 +25,13 @@ public:
 	string getMemberNumber();
 	string getMemberID();
 	string getMemberPWD();
+	Product* searchingProduct;
+	void myProductList();
+	void boughtProductList();
 	void registerProduct(string productName, string madeCompanyName, int productPrice, int productQuantity);
 	void printSelledProductStatistics();
 	void evaluateSatisfaction(string productName, int evaluateNum);
-
+	void inquirySoldProductList();
+	void searchProductDetail(string productName);
+	void purchaseProduct();
 };
