@@ -36,7 +36,7 @@ void Member::myProductList()
 	if (sellingProductVector.size() == 0)
 	{
 		(*out_fp) << "> " << "등록한 상품이 없습니다.\n\n";
-		cout << "> " << "등록한 상품이 없습니다.\n\n";
+		//cout << "> " << "등록한 상품이 없습니다.\n\n";
 	}
 	else
 	{
@@ -47,7 +47,7 @@ void Member::myProductList()
 			nowLookingProduct->printMyProducts();
 		}
 		(*out_fp) << "\n";
-		cout << "\n";
+		//cout << "\n";
 	}
 }
 
@@ -59,7 +59,7 @@ void Member::boughtProductList()
 	if (boughtProductVector.size() == 0)
 	{
 		(*out_fp) << "> " << "구매한 상품이 없습니다.\n\n";
-		cout<< "> " << "구매한 상품이 없습니다.\n\n";
+		//cout<< "> " << "구매한 상품이 없습니다.\n\n";
 	}
 	else
 	{
@@ -69,7 +69,7 @@ void Member::boughtProductList()
 			nowLookingProduct->printBoughtProducts();
 		}
 		(*out_fp) << "\n";
-		cout << "\n";
+		//cout << "\n";
 	}
 }
 
@@ -79,7 +79,7 @@ void Member::registerProduct(string productName, string madeCompanyName, int pro
 	sellingProductVector.push_back(newProduct);
 
 	(*out_fp) << "3.1. 판매 의류 등록\n> " << productName << " " << madeCompanyName << " " << productPrice << " " << productQuantity << "\n\n";
-	cout << "3.1. 판매 의류 등록\n> " << productName << " " << madeCompanyName << " " << productPrice << " " << productQuantity << "\n\n";
+	//cout << "3.1. 판매 의류 등록\n> " << productName << " " << madeCompanyName << " " << productPrice << " " << productQuantity << "\n\n";
 
 }
 
@@ -98,7 +98,7 @@ void Member::evaluateSatisfaction(string productName, int evaluateNum)
 	if (evaluatingProduct == NULL)
 	{
 		(*out_fp) << "4.4. 상품 구매만족도 평가\n> 일치하는 상품이 없습니다\n\n";
-		cout<< "4.4. 상품 구매만족도 평가\n> 일치하는 상품이 없습니다\n\n";
+		//cout<< "4.4. 상품 구매만족도 평가\n> 일치하는 상품이 없습니다\n\n";
 	}
 	else
 	{
@@ -106,19 +106,19 @@ void Member::evaluateSatisfaction(string productName, int evaluateNum)
 		(*out_fp) << "4.4. 상품 구매만족도 평가\n> " << evaluatingProduct->getSellingMember()->getMemberName() << " " << evaluatingProduct->getProductName() << " " << evaluatingProduct->getAverageSatisfaction()
 			<< "\n\n";
 
-		cout << "4.4. 상품 구매만족도 평가\n> " << evaluatingProduct->getSellingMember()->getMemberName() << " " << evaluatingProduct->getProductName() << " " << evaluatingProduct->getAverageSatisfaction()
-			<< "\n\n";
+		//cout << "4.4. 상품 구매만족도 평가\n> " << evaluatingProduct->getSellingMember()->getMemberName() << " " << evaluatingProduct->getProductName() << " " << evaluatingProduct->getAverageSatisfaction()
+		//	<< "\n\n";
 	}
 }
 
 void Member::printSelledProductStatistics()
 {
 	(*out_fp) << "5.1. 판매 상품 통계\n";
-	cout << "5.1. 판매 상품 통계\n";
+	//cout << "5.1. 판매 상품 통계\n";
 	if (soldOutProductVector.size() == 0 && sellingProductVector.size()==0)
 	{
 		(*out_fp) << "> 판매된 상품이 없습니다\n";
-		cout << "> 판매된 상품이 없습니다\n";
+		//cout << "> 판매된 상품이 없습니다\n";
 	}
 	else
 	{
@@ -137,7 +137,7 @@ void Member::printSelledProductStatistics()
 		}
 	}
 	(*out_fp) <<"\n";
-	cout << "\n";
+	//cout << "\n";
 
 }
 
@@ -150,12 +150,12 @@ void Member::printSelledProductStatistics()
 void Member::inquirySoldProductList()
 {
 	(*out_fp) << "3.3. 판매 완료 상품 조회\n";
-	cout << "3.3. 판매 완료 상품 조회\n";
+	//cout << "3.3. 판매 완료 상품 조회\n";
 
 	if (soldOutProductVector.size() == 0)
 	{
 		(*out_fp) << "> 판매 완료된 상품이 없습니다.\n";
-		cout << "> 판매 완료된 상품이 없습니다.\n";
+		//cout << "> 판매 완료된 상품이 없습니다.\n";
 	}
 	else
 	{
@@ -166,7 +166,7 @@ void Member::inquirySoldProductList()
 		}
 	}
 	(*out_fp) << "\n";
-	cout << "\n";
+	//cout << "\n";
 }
 
 /*
@@ -183,15 +183,11 @@ void Member::searchProductDetail(string productName)
 		for (int i = 0; i < (*wholeMemberVector)[j]->sellingProductVector.size(); i++)  //모든 상품을 베이스로 searching 해야 하는데.... product에 선언하면... 어떻게 풀어야 할지 모르겠음
 		{
 			Product* nowLookingProduct = (*wholeMemberVector)[j]->sellingProductVector[i];
-			cout<<"검색중..프로덕트 네임.." << nowLookingProduct->getProductName()<<endl;
-			cout << "검색중..검색어.." << productName << endl;
+			//cout<<"검색중..프로덕트 네임.." << nowLookingProduct->getProductName()<<endl;
+			//cout << "검색중..검색어.." << productName << endl;
 			if (nowLookingProduct->getProductName().compare(productName) == 0)
 			{
-				if (nowLookingProduct->getNowSelling() == false) {
-					cout << "다팔린걸 검색했넹\n\n";
-				}
-				else {
-
+				if (nowLookingProduct->getNowSelling() == true){
 					searchingProduct = nowLookingProduct;
 					break;
 				}
@@ -205,15 +201,15 @@ void Member::searchProductDetail(string productName)
 	if (searchingProduct == NULL)
 	{
 		(*out_fp) << "4.1. 상품 정보 검색\n> 일치하는 상품이 없습니다\n\n";
-		cout << "4.1. 상품 정보 검색\n> 일치하는 상품이 없습니다\n\n";
+		//cout << "4.1. 상품 정보 검색\n> 일치하는 상품이 없습니다\n\n";
 	}
 	else
 	{
 		(*out_fp) << "4.1. 상품 정보 검색\n> " << searchingProduct->getSellingMember()->getMemberID() << " " << searchingProduct->getProductName() << " "
 			<< searchingProduct->getmadeCompanyName() << " " << searchingProduct->getproductPrice() << " " << searchingProduct->remainProductQuantity() << " " << searchingProduct->getAverageSatisfaction() << "\n\n";
 
-		cout << "4.1. 상품 정보 검색\n> " << searchingProduct->getSellingMember()->getMemberID() << " " << searchingProduct->getProductName() << " "
-			<< searchingProduct->getmadeCompanyName() << " " << searchingProduct->getproductPrice() << " " << searchingProduct->remainProductQuantity() << " " << searchingProduct->getAverageSatisfaction() << "\n\n";
+		//cout << "4.1. 상품 정보 검색\n> " << searchingProduct->getSellingMember()->getMemberID() << " " << searchingProduct->getProductName() << " "
+			//<< searchingProduct->getmadeCompanyName() << " " << searchingProduct->getproductPrice() << " " << searchingProduct->remainProductQuantity() << " " << searchingProduct->getAverageSatisfaction() << "\n\n";
 	}
 }
 
@@ -228,18 +224,18 @@ void Member::purchaseProduct()
 	if (searchingProduct == NULL)
 	{
 		(*out_fp) << "4.2. 상품 구매\n> 상품을 검색하세요\n\n";
-		cout << "4.2. 상품 구매\n> 상품을 검색하세요\n\n";
+		//cout << "4.2. 상품 구매\n> 상품을 검색하세요\n\n";
 	}
 	else
 	{
 		if (searchingProduct->getNowSelling() == false) 
 		{
 			(*out_fp) << "4.2. 상품 구매\n> 판매가 중지된 상품입니다.\n\n";
-			cout << "4.2. 상품 구매\n> 판매가 중지된 상품입니다.\n\n";
+			//cout << "4.2. 상품 구매\n> 판매가 중지된 상품입니다.\n\n";
 		}
 		else {
 			(*out_fp) << "4.2. 상품 구매\n> " << searchingProduct->getSellingMember()->getMemberID() << " " << searchingProduct->getProductName() << "\n\n";
-			cout << "4.2. 상품 구매\n> " << searchingProduct->getSellingMember()->getMemberID() << " " << searchingProduct->getProductName() << "\n\n";
+			//cout << "4.2. 상품 구매\n> " << searchingProduct->getSellingMember()->getMemberID() << " " << searchingProduct->getProductName() << "\n\n";
 			searchingProduct->buyProduct();
 			
 			boughtProductVector.push_back(searchingProduct);
@@ -256,8 +252,19 @@ void Member::productSoldOut(Product* product)
 	auto soldOutProduct = find(sellingProductVector.begin(), sellingProductVector.end(), product);
 	if (soldOutProduct != sellingProductVector.end())
 	{
-		cout << product->getProductName() << "은 다팔렸어용\n\n";
+		//cout << product->getProductName() << "은 다팔렸어용\n\n";
 		sellingProductVector.erase(soldOutProduct);
 		soldOutProductVector.push_back(product);
+	}
+}
+
+void Member::deleteMemory() {
+	int sellSize = sellingProductVector.size();
+	int soldSize = soldOutProductVector.size();
+	for (int i = 0; i < sellSize; i++) {
+		delete sellingProductVector[i];
+	}
+	for (int i = 0; i < soldSize; i++) {
+		delete soldOutProductVector[i];
 	}
 }

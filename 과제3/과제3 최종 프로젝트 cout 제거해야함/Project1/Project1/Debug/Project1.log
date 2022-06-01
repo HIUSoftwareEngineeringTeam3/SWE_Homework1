@@ -1,9 +1,4 @@
-﻿  Member.cpp
-d:\swe_homework1\과제3\테스트 프로젝트\project1\project1\member.cpp(66): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-d:\swe_homework1\과제3\테스트 프로젝트\project1\project1\member.cpp(89): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-d:\swe_homework1\과제3\테스트 프로젝트\project1\project1\member.cpp(125): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-d:\swe_homework1\과제3\테스트 프로젝트\project1\project1\member.cpp(130): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-d:\swe_homework1\과제3\테스트 프로젝트\project1\project1\member.cpp(162): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-d:\swe_homework1\과제3\테스트 프로젝트\project1\project1\member.cpp(181): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-d:\swe_homework1\과제3\테스트 프로젝트\project1\project1\member.cpp(183): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-  Project1.vcxproj -> D:\SWE_Homework1\과제3\테스트 프로젝트\Project1\Debug\Project1.exe
+﻿  main.cpp
+d:\swe_homework1\과제3\과제3 최종 프로젝트 cout 제거해야함\project1\project1\main.cpp(189): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+d:\swe_homework1\과제3\과제3 최종 프로젝트 cout 제거해야함\project1\project1\main.cpp(229): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  Project1.vcxproj -> D:\SWE_Homework1\과제3\과제3 최종 프로젝트 cout 제거해야함\Project1\Debug\Project1.exe

@@ -47,23 +47,23 @@ Member* Product::getSellingMember()
 void Product::printMyProducts()
 {
 	(*out_fp) << "> " << productName << " " << madeCompanyName << " " << productPrice << " " << productQuantity << "\n";
-	cout << "> " << productName << " " << madeCompanyName << " " << productPrice << " " << productQuantity << "\n";
+	//cout << "> " << productName << " " << madeCompanyName << " " << productPrice << " " << productQuantity << "\n";
 }
 
 void Product::printBoughtProducts()
 {
 	(*out_fp) << "> " << getSellingMember()->getMemberID() << " " << productName << " " << madeCompanyName << " " << productPrice << " " << remainProductQuantity() << " ";
-	cout << "> " << getSellingMember()->getMemberID() << " " << productName << " " << madeCompanyName << " " << productPrice << " " << remainProductQuantity() << " ";
+	//cout << "> " << getSellingMember()->getMemberID() << " " << productName << " " << madeCompanyName << " " << productPrice << " " << remainProductQuantity() << " ";
 	if (satisfactionQuantity == 0) {
 		(*out_fp) << "평가되지 않음";
-		cout << "평가되지 않음";
+		//cout << "평가되지 않음";
 	}
 	else {
 		(*out_fp) << getAverageSatisfaction();
-		cout << getAverageSatisfaction();
+		//cout << getAverageSatisfaction();
 	}
 	(*out_fp) << "\n";
-	cout << "\n";
+	//cout << "\n";
 }
 
 void Product::evaluateSatisfaction(int evaluateNum)
@@ -75,17 +75,17 @@ void Product::evaluateSatisfaction(int evaluateNum)
 void Product::printStatistics()
 {
 	(*out_fp)<< "> " << productName << " " << selledProductQuantity * productPrice << " ";
-	cout<<"> " << productName << " " << selledProductQuantity * productPrice << " ";
+//	cout<<"> " << productName << " " << selledProductQuantity * productPrice << " ";
 	if (satisfactionQuantity == 0) {
 		(*out_fp) << "평가되지 않음";
-		cout << "평가되지 않음";
+	//	cout << "평가되지 않음";
 	}
 	else {
 		(*out_fp) << getAverageSatisfaction();
-		cout << getAverageSatisfaction();
+	//	cout << getAverageSatisfaction();
 	}
 	(*out_fp) << "\n";
-	cout << "\n";
+	//cout << "\n";
 }
 
 float Product::getAverageSatisfaction()
@@ -113,9 +113,9 @@ void Product::printSoldProductList()
 
 	(*out_fp) << "\n";
 
-	cout << "> " << getProductName() << " " << getmadeCompanyName() << " " << getproductPrice() << " " << selledProductQuantity << " " << getAverageSatisfaction();
+	//cout << "> " << getProductName() << " " << getmadeCompanyName() << " " << getproductPrice() << " " << selledProductQuantity << " " << getAverageSatisfaction();
 
-	cout << "\n";
+	//cout << "\n";
 }
 
 /*

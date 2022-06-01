@@ -31,6 +31,7 @@ void programExit();
 void inquirySoldProductList();
 void searchProductDetail();
 void purchaseProduct();
+void deleteMemory();
 
 // 변수 선언
 vector<Member*> memberVector;
@@ -47,6 +48,7 @@ int main()
 
 	
 	doTask();
+	
 	return 0;
 }
 
@@ -58,7 +60,7 @@ void doTask()
 	while (!is_program_exit)
 	{ // 입력파일에서 메뉴 숫자 2개를 읽기
 		in_fp >> menu_level_1 >> menu_level_2;
-		cout << menu_level_1 <<" "<< menu_level_2 << endl;
+		//cout << menu_level_1 <<" "<< menu_level_2 << endl;
 		
 
 		// 메뉴 구분 및 해당 연산 수행
@@ -157,7 +159,7 @@ void registerProduct()
 	string productName, companyName;
 	int price, quantity;
 	in_fp >> productName >> companyName >> price >> quantity;
-	cout  << productName << companyName << price << quantity << endl;
+	//cout  << productName << companyName << price << quantity << endl;
 	nowLoginMember->registerProduct(productName, companyName, price, quantity);
 }
 
@@ -166,7 +168,7 @@ void evaluateSatisfaction()
 	string productName;
 	int evaluateNum;
 	in_fp >> productName >> evaluateNum;
-	cout << productName<<evaluateNum << endl;
+	//cout << productName<<evaluateNum << endl;
 	nowLoginMember->evaluateSatisfaction(productName, evaluateNum);
 	//nowSelectedProduct->evaluateSatisfaction(evaluateNum);
 }
@@ -181,28 +183,28 @@ void join()
 {
 	string name, ssn, id, pwd;
 	in_fp >> name >> ssn >> id >> pwd;
-	cout  << name << ssn << id << pwd << endl;
+	//cout  << name << ssn << id << pwd << endl;
 	out_fp << "1.1. 회원가입\n> ";
-	cout << "1.1. 회원가입\n> ";
+	//cout << "1.1. 회원가입\n> ";
 	for (int i = 0; i < memberVector.size(); i++)
 	{
 		if (id == memberVector[i]->getMemberID())
 		{
 			out_fp << "중복된 아이디입니다.\n\n";
-			cout << "중복된 아이디입니다.\n\n";
+//			cout << "중복된 아이디입니다.\n\n";
 			return;
 		}
 	}
 	Member* nowMember = new Member(name, ssn, id, pwd);
 	memberVector.push_back(nowMember);
 	out_fp << name << " " << ssn << " " << id << " " << pwd << "\n\n";
-	cout << name << " " << ssn << " " << id << " " << pwd << "\n\n";
+	//cout << name << " " << ssn << " " << id << " " << pwd << "\n\n";
 }
 
 void secession()
 {
 	out_fp << "1.2. 회원탈퇴\n> ";
-	cout << "1.2. 회원탈퇴\n> ";
+	//cout << "1.2. 회원탈퇴\n> ";
 	auto secessionMember = find(memberVector.begin(), memberVector.end(), nowLoginMember);
 	if (secessionMember != memberVector.end())
 	{
@@ -212,16 +214,16 @@ void secession()
 		nowLoginMember = NULL;
 	}
 	out_fp << "\n\n";
-	cout << "\n\n";
+	//cout << "\n\n";
 }
 
 void login()
 {
 	string id, pwd;
 	in_fp >> id >> pwd;
-	cout << id << pwd<<endl;
+	//cout << id << pwd<<endl;
 	out_fp << "2.1. 로그인\n> ";
-	cout << "2.1. 로그인\n> ";
+	//cout << "2.1. 로그인\n> ";
 	if (nowLoginMember == NULL)
 	{
 		for (int i = 0; i < memberVector.size(); i++)
@@ -232,66 +234,67 @@ void login()
 				{
 					nowLoginMember = memberVector[i];
 					out_fp << id << " " << pwd << "\n\n";
-					cout << id << " " << pwd << "\n\n";
+					//cout << id << " " << pwd << "\n\n";
 					return;
 				}
 				else
 				{
 					out_fp << "비밀번호가 틀렸습니다.\n\n";
-					cout << "비밀번호가 틀렸습니다.\n\n";
+					//cout << "비밀번호가 틀렸습니다.\n\n";
 					return;
 				}
 			}
 		}
 		out_fp << "유효하지 않은 아이디입니다.\n\n";
-		cout << "유효하지 않은 아이디입니다.\n\n";
+		//out << "유효하지 않은 아이디입니다.\n\n";
 	}
 	else
 	{
 		out_fp << "이미 로그인 중입니다.\n\n";
-		cout << "이미 로그인 중입니다.\n\n";
+		//cout << "이미 로그인 중입니다.\n\n";
 	}
 }
 
 void logout()
 {
 	out_fp << "2.2. 로그아웃\n> ";
-	cout << "2.2. 로그아웃\n> ";
+	//cout << "2.2. 로그아웃\n> ";
 	if (nowLoginMember == NULL)
 	{
 		out_fp << "로그인중이 아닙니다.\n\n";
-		cout << "로그인중이 아닙니다.\n\n";
+		//cout << "로그인중이 아닙니다.\n\n";
 	}
 	else
 	{
 		out_fp << nowLoginMember->getMemberID();
-		cout << nowLoginMember->getMemberID();
+		//cout << nowLoginMember->getMemberID();
 	}
 	nowLoginMember = NULL;
 	out_fp << "\n\n";
-	cout << "\n\n";
+	//cout << "\n\n";
 }
 
 void myProductList()
 {
 	out_fp << "3.2. 등록 상품 조회\n";
-	cout << "3.2. 등록 상품 조회\n";
+	//cout << "3.2. 등록 상품 조회\n";
 	nowLoginMember->myProductList();
 }
 
 void boughtProductList()
 {
 	out_fp << "4.3. 상품 구매 내역 조회\n";
-	cout << "4.3. 상품 구매 내역 조회\n";
+	//cout << "4.3. 상품 구매 내역 조회\n";
 	nowLoginMember->boughtProductList();
 }
 
 
 void programExit()
 {
-	cout << "close" << endl;
+	//cout << "close" << endl;
 	in_fp.close();
 	out_fp.close();
+	deleteMemory();
 }
 
 void inquirySoldProductList()
@@ -303,7 +306,7 @@ void searchProductDetail()
 {
 	string productName;
 	in_fp >> productName;
-	cout << productName<<endl;
+	//cout << productName<<endl;
 
 	nowLoginMember->searchProductDetail(productName);
 }
@@ -311,5 +314,15 @@ void searchProductDetail()
 void purchaseProduct()
 {
 	nowLoginMember->purchaseProduct();
+}
+
+void deleteMemory() {
+	int memberSize = memberVector.size();
+
+	for (int i = 0; i < memberSize; i++) {
+		Member* member = memberVector[i];
+		member->deleteMemory();
+		delete member;
+	}
 }
 

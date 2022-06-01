@@ -36,4 +36,5 @@ public:
 	void searchProductDetail(string productName);
 	void purchaseProduct();
 	void productSoldOut(Product* product);
+	void deleteMemory();
 };
