@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AddNewMember.cpp" />
+    <ClCompile Include="AddNewMemberUI.cpp" />
+    <ClCompile Include="EvaluateSatisfaction.cpp" />
+    <ClCompile Include="EvaluateSatisfactionUI.cpp" />
+    <ClCompile Include="InquiryBoughtProduct.cpp" />
+    <ClCompile Include="InquiryBoughtProductUI.cpp" />
+    <ClCompile Include="InquirySellingProduct.cpp" />
+    <ClCompile Include="InquirySellingProductUI.cpp" />
+    <ClCompile Include="InquirySoldProduct.cpp" />
+    <ClCompile Include="InquirySoldProductUI.cpp" />
+    <ClCompile Include="LoginMember.cpp" />
+    <ClCompile Include="LoginMemberUI.cpp" />
+    <ClCompile Include="LogOutMember.cpp" />
+    <ClCompile Include="LogOutMemberUI.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Member.cpp" />
+    <ClCompile Include="MemberList.cpp" />
+    <ClCompile Include="PrintStatistics.cpp" />
+    <ClCompile Include="PrintStatisticsUI.cpp" />
+    <ClCompile Include="Product.cpp" />
+    <ClCompile Include="ProductSearch.cpp" />
+    <ClCompile Include="ProductSearchUI.cpp" />
+    <ClCompile Include="PurchaseProduct.cpp" />
+    <ClCompile Include="PurchaseProductUI.cpp" />
+    <ClCompile Include="RegisterProduct.cpp" />
+    <ClCompile Include="RegisterProductUI.cpp" />
+    <ClCompile Include="RemoveMember.cpp" />
+    <ClCompile Include="RemoveMemberUI.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AddNewMember.h" />
+    <ClInclude Include="AddNewMemberUI.h" />
+    <ClInclude Include="EvaluateSatisfaction.h" />
+    <ClInclude Include="EvaluateSatisfactionUI.h" />
+    <ClInclude Include="InquiryBoughtProduct.h" />
+    <ClInclude Include="InquiryBoughtProductUI.h" />
+    <ClInclude Include="InquirySellingProduct.h" />
+    <ClInclude Include="InquirySellingProductUI.h" />
+    <ClInclude Include="InquirySoldProduct.h" />
+    <ClInclude Include="InquirySoldProductUI.h" />
+    <ClInclude Include="LoginMember.h" />
+    <ClInclude Include="LoginMemberUI.h" />
+    <ClInclude Include="LogOutMember.h" />
+    <ClInclude Include="LogOutMemberUI.h" />
+    <ClInclude Include="Member.h" />
+    <ClInclude Include="MemberList.h" />
+    <ClInclude Include="PrintStatistics.h" />
+    <ClInclude Include="PrintStatisticsUI.h" />
+    <ClInclude Include="Product.h" />
+    <ClInclude Include="ProductSearch.h" />
+    <ClInclude Include="ProductSearchUI.h" />
+    <ClInclude Include="PurchaseProduct.h" />
+    <ClInclude Include="PurchaseProductUI.h" />
+    <ClInclude Include="RegisterProduct.h" />
+    <ClInclude Include="RegisterProductUI.h" />
+    <ClInclude Include="RemoveMember.h" />
+    <ClInclude Include="RemoveMemberUI.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{DF874190-3E5F-4C17-A012-0178FAD7DE1A}</ProjectGuid>
+    <RootNamespace>Project1</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
