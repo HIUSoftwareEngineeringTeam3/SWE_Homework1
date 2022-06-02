@@ -3,7 +3,7 @@
 #include "MemberList.h"
 
 RemoveMember::RemoveMember(ofstream* outfp, ifstream* infp, MemberList* memList) {
-	boundary = new RemoveMemberUI(outfp, infp);
+	boundary = new RemoveMemberUI(outfp, infp, this);
 	memberList = memList;
 	boundary->startInterface();
 	

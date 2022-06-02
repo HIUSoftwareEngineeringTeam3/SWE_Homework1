@@ -1,9 +1,10 @@
 #include "EvaluateSatisfaction.h"
 #include "EvaluateSatisfactionUI.h"
 
-EvaluateSatisfactionUI::EvaluateSatisfactionUI(ofstream* outfp, ifstream* infp) {
+EvaluateSatisfactionUI::EvaluateSatisfactionUI(ofstream* outfp, ifstream* infp, EvaluateSatisfaction* controlClass) {
 	out_fp = outfp;
 	in_fp = infp;
+	control = controlClass;
 }
 void EvaluateSatisfactionUI::startInterface() {
 	(*out_fp) << "4.4. 상품 구매만족도 평가\n> ";

@@ -6,7 +6,7 @@
 
 
 PurchaseProduct::PurchaseProduct(ofstream* outfp, ifstream* infp, MemberList* memList) {
-	boundary = new PurchaseProductUI(outfp, infp);
+	boundary = new PurchaseProductUI(outfp, infp, this);
 	memberList = memList;
 
 	boundary->startInterface();

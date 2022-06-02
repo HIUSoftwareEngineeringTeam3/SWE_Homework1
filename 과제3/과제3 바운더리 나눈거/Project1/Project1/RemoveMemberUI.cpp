@@ -1,9 +1,10 @@
 #include "RemoveMember.h"
 #include "RemoveMemberUI.h"
 #include "Member.h"
-RemoveMemberUI::RemoveMemberUI(ofstream* outfp, ifstream* infp) {
+RemoveMemberUI::RemoveMemberUI(ofstream* outfp, ifstream* infp, RemoveMember* controlClass) {
 	out_fp = outfp;
 	in_fp = infp;
+	control = controlClass;
 }
 void RemoveMemberUI::startInterface() {
 	(*out_fp) << "1.2. È¸¿øÅ»Åð\n> ";

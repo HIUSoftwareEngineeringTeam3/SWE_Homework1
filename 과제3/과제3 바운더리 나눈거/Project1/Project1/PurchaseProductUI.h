@@ -16,7 +16,7 @@ private:
 	ofstream* out_fp;
 	ifstream* in_fp;
 public:
-	PurchaseProductUI(ofstream* outfp, ifstream* infp);
+	PurchaseProductUI(ofstream* outfp, ifstream* infp, PurchaseProduct* controlClass);
 	void startInterface();
 	void loginFailed();
 	void productEmptyFailed();

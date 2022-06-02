@@ -16,11 +16,12 @@ private:
 	ofstream* out_fp;
 	ifstream* in_fp;
 public:
-	PrintStatisticsUI(ofstream* outfp, ifstream* infp);
+	PrintStatisticsUI(ofstream* outfp, ifstream* infp, PrintStatistics* controlClass);
+	void printStatisticsButton();
 	void startInterface();
 	void loginFailed();
-	void inquirySoldOutProductFailed();
-	void inquirySoldOutProductSuccess(string productName, string companyName, int price, int quantity, float averageSatisfaction);
+	void printStatisticsFailed();
+	void printStatisticsSuccess(string productName, int price, float averageSatisfaction);
 	void endOfLine();
 
 

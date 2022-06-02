@@ -26,6 +26,8 @@
 #include "InquiryBoughtProduct.h"
 #include "EvaluateSatisfaction.h"
 #include "EvaluateSatisfactionUI.h"
+#include "PrintStatisticsUI.h"
+#include "PrintStatistics.h"
 #include <iostream>
 #include <string>
 #include <vector>
@@ -198,8 +200,10 @@ void evaluateSatisfaction()
 
 void printStatistics() 
 {
-
-	nowLoginMember->printSelledProductStatistics();
+	PrintStatistics* print = new PrintStatistics(&out_fp, &in_fp, &memberList);
+	print->getBoundary()->printStatisticsButton();
+	delete print->getBoundary();
+	delete print;
 
 }
 
@@ -264,6 +268,7 @@ void programExit()
 void inquirySoldProduct()
 {
 	InquirySoldProduct* inquirySoldProduct  = new InquirySoldProduct(&out_fp, &in_fp, &memberList);
+	inquirySoldProduct->getBoundary()->clickInquirySoldProductButton();
 	delete inquirySoldProduct->getBoundary();
 	delete inquirySoldProduct;
 }
@@ -285,10 +290,10 @@ void purchaseProduct()
 }
 
 void deleteMemory() {
-	int memberSize = memberVector.size();
+	int memberSize = memberList.getMemberVector()->size();
 
 	for (int i = 0; i < memberSize; i++) {
-		Member* member = memberVector[i];
+		Member* member = (*(memberList.getMemberVector()))[i];
 		member->deleteMemory();
 		delete member;
 	}

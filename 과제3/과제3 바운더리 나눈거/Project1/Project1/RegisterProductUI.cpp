@@ -1,9 +1,10 @@
 #include "RegisterProductUI.h"
 #include "RegisterProduct.h"
 
-RegisterProductUI::RegisterProductUI(ofstream* outfp, ifstream* infp) {
+RegisterProductUI::RegisterProductUI(ofstream* outfp, ifstream* infp,RegisterProduct* controlClass) {
 	out_fp = outfp;
 	in_fp = infp;
+	control = controlClass;
 }
 void RegisterProductUI::startInterface() {
 	(*out_fp) << "3.1. 판매 의류 등록\n> ";

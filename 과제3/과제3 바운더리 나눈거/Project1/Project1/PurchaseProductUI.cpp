@@ -1,9 +1,10 @@
 #include "PurchaseProduct.h"
 #include "PurchaseProductUI.h"
 
-PurchaseProductUI::PurchaseProductUI(ofstream* outfp, ifstream* infp) {
+PurchaseProductUI::PurchaseProductUI(ofstream* outfp, ifstream* infp, PurchaseProduct* controlClass) {
 	out_fp = outfp;
 	in_fp = infp;
+	control = controlClass;
 }
 void PurchaseProductUI::startInterface() {
 	(*out_fp) << "4.2. 상품 구매\n> ";

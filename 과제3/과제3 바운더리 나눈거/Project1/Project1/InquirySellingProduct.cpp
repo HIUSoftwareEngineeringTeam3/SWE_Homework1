@@ -6,7 +6,7 @@
 
 
 InquirySellingProduct::InquirySellingProduct(ofstream* outfp, ifstream* infp, MemberList* memList) {
-	boundary = new InquirySellingProductUI(outfp, infp);
+	boundary = new InquirySellingProductUI(outfp, infp, this);
 	memberList = memList;
 	boundary->startInterface();
 }
@@ -28,7 +28,7 @@ void InquirySellingProduct::showProduct() {
 				boundary->inquiryProductSuccess(nowLookingProduct->getProductName(), nowLookingProduct->getmadeCompanyName(),
 					nowLookingProduct->getproductPrice(), nowLookingProduct->remainProductQuantity());
 			}
-			
+			boundary->endOfLine();
 			//cout << "\n";
 		}
 	}

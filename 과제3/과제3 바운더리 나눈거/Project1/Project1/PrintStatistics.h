@@ -17,7 +17,7 @@ private:
 
 public:
 	PrintStatistics(ofstream* outfp, ifstream* infp, MemberList* memList);
-	void showProduct();
+	void showStatistics();
 	PrintStatisticsUI* getBoundary();
 
 

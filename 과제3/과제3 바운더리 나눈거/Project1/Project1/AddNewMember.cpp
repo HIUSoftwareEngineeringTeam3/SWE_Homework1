@@ -13,7 +13,9 @@ AddNewMember::AddNewMember(ofstream* outfp, ifstream* infp, MemberList* memList)
 void AddNewMember::addNewMember(string name, string ssn, string id, string pwd) {
 	
 	if (checkMemberID(name, ssn, id, pwd)==true) {
+		
 		Member* nowMember = new Member(name, ssn, id, pwd);
+		boundary->addMemberSuccess(name, ssn, id, pwd);
 		memberList->addNewMember(nowMember);
 	}
 	else {

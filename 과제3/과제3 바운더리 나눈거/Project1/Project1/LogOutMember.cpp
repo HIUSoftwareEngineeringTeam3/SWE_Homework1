@@ -5,7 +5,7 @@
 
 
 LogOutMember::LogOutMember(ofstream* outfp, ifstream* infp, MemberList* memList) {
-	boundary = new LogOutMemberUI(outfp, infp);
+	boundary = new LogOutMemberUI(outfp, infp, this);
 	memberList = memList;
 	boundary->startInterface();
 }

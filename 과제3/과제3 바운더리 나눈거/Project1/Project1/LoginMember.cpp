@@ -4,7 +4,7 @@
 
 
 LoginMember::LoginMember(ofstream* outfp, ifstream* infp, MemberList* memList) {
-	boundary = new LoginMemberUI(outfp, infp);
+	boundary = new LoginMemberUI(outfp, infp,this);
 	memberList = memList;
 	boundary->startInterface();
 }

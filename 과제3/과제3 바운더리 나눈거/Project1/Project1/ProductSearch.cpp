@@ -6,7 +6,7 @@
 
 
 ProductSearch::ProductSearch(ofstream* outfp, ifstream* infp, MemberList* memList) {
-	boundary = new ProductSearchUI(outfp, infp);
+	boundary = new ProductSearchUI(outfp, infp, this);
 	memberList = memList;
 	boundary->startInterface();
 
@@ -36,13 +36,13 @@ void ProductSearch::showProductList(string name) {
 	if (searchingProduct == NULL)
 	{
 		boundary->productListFailed();
-		//cout << "4.1. 상품 정보 검색\n> 일치하는 상품이 없습니다\n\n";
 	}
 	else
 	{
+		memberList->getNowLoginMember()->searchingProduct = searchingProduct;
 		boundary->productListSuccess(searchingProduct->getSellingMember()->getMemberID(), searchingProduct->getProductName(),
 			searchingProduct->getmadeCompanyName(), searchingProduct->getproductPrice(),searchingProduct->remainProductQuantity() ,searchingProduct->getAverageSatisfaction());
-	
+
 	}
 }
 

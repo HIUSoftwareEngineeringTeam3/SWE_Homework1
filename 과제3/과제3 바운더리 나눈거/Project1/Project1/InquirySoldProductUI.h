@@ -16,9 +16,10 @@ private:
 	ofstream* out_fp;
 	ifstream* in_fp;
 public:
-	InquirySoldProductUI(ofstream* outfp, ifstream* infp);
+	InquirySoldProductUI(ofstream* outfp, ifstream* infp, InquirySoldProduct* controlClass);
 	void startInterface();
 	void loginFailed();
+	void clickInquirySoldProductButton();
 	void inquirySoldOutProductFailed();
 	void inquirySoldOutProductSuccess(string productName, string companyName, int price, int quantity,float averageSatisfaction);
 	void endOfLine();

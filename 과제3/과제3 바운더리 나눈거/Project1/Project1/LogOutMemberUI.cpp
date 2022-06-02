@@ -2,9 +2,10 @@
 #include "LogOutMemberUI.h"
 #include "Member.h"
 
-LogOutMemberUI::LogOutMemberUI(ofstream* outfp, ifstream* infp) {
+LogOutMemberUI::LogOutMemberUI(ofstream* outfp, ifstream* infp, LogOutMember* controlClass) {
 	out_fp = outfp;
 	in_fp = infp;
+	control = controlClass;
 }
 void LogOutMemberUI::startInterface() {
 	(*out_fp) << "2.2. ·Î±×¾Æ¿ô\n> ";

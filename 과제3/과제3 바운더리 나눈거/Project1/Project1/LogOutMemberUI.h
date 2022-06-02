@@ -16,7 +16,7 @@ private:
 	ofstream* out_fp;
 	ifstream* in_fp;
 public:
-	LogOutMemberUI(ofstream* outfp, ifstream* infp);
+	LogOutMemberUI(ofstream* outfp, ifstream* infp, LogOutMember* controlClass);
 	void startInterface();
 	void clickLogOutMember();
 	void logOutMemberFail();

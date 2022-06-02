@@ -2,9 +2,11 @@
 #include "LoginMemberUI.h"
 #include "Member.h"
 
-LoginMemberUI::LoginMemberUI(ofstream* outfp, ifstream* infp) {
+LoginMemberUI::LoginMemberUI(ofstream* outfp, ifstream* infp, LoginMember* controller) {
 	out_fp = outfp;
 	in_fp = infp;
+	control = controller;
+
 }
 void LoginMemberUI::startInterface() {
 	(*out_fp) << "2.1. ·Î±×ÀÎ\n> ";

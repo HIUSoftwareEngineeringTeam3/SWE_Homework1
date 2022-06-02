@@ -6,7 +6,7 @@
 
 
 InquiryBoughtProduct::InquiryBoughtProduct(ofstream* outfp, ifstream* infp, MemberList* memList) {
-	boundary = new InquiryBoughtProductUI(outfp, infp);
+	boundary = new InquiryBoughtProductUI(outfp, infp, this);
 	memberList = memList;
 	boundary->startInterface();
 	
@@ -31,7 +31,7 @@ void InquiryBoughtProduct::showProduct() {
 			for (int i = 0; i < boughtProductVector->size(); i++)
 			{
 				Product* nowLookingProduct = (*boughtProductVector)[i];
-				boundary->inquiryBoughtProductSuccess(nowLookingProduct->getSellingMember()->getMemberID,
+				boundary->inquiryBoughtProductSuccess(nowLookingProduct->getSellingMember()->getMemberID(),
 					nowLookingProduct->getProductName(), nowLookingProduct->getmadeCompanyName(),
 					nowLookingProduct->getproductPrice(), nowLookingProduct->remainProductQuantity(),
 					nowLookingProduct->getAverageSatisfaction());

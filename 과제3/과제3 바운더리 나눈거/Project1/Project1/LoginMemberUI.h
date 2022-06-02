@@ -16,7 +16,7 @@ private:
 	ofstream* out_fp;
 	ifstream* in_fp;
 public:
-	LoginMemberUI(ofstream* outfp, ifstream* infp);
+	LoginMemberUI(ofstream* outfp, ifstream* infp, LoginMember* controller);
 	void startInterface();
 	void inputID_PW();
 	void loginMemberFail(int type);

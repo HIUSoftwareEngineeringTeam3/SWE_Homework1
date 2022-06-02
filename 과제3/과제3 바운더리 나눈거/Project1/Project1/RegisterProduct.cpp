@@ -5,7 +5,7 @@
 
 
 RegisterProduct::RegisterProduct(ofstream* outfp, ifstream* infp, MemberList* memList) {
-	boundary = new RegisterProductUI(outfp, infp);
+	boundary = new RegisterProductUI(outfp, infp, this);
 	memberList = memList;
 	boundary->startInterface();
 }

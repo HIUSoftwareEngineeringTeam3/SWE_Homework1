@@ -16,7 +16,7 @@ private:
 	ofstream* out_fp;
 	ifstream* in_fp;
 public:
-	EvaluateSatisfactionUI(ofstream* outfp, ifstream* infp);
+	EvaluateSatisfactionUI(ofstream* outfp, ifstream* infp, EvaluateSatisfaction* controlClass);
 	void startInterface();
 	void loginFailed();
 	void productNotFoundFailed();

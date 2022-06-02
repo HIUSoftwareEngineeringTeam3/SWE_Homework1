@@ -1,9 +1,11 @@
 #include "InquirySellingProductUI.h"
 #include "InquirySellingProduct.h"
 
-InquirySellingProductUI::InquirySellingProductUI(ofstream* outfp, ifstream* infp) {
+InquirySellingProductUI::InquirySellingProductUI(ofstream* outfp, ifstream* infp, InquirySellingProduct* controlClass) {
 	out_fp = outfp;
 	in_fp = infp;
+	control = controlClass;
+
 }
 void InquirySellingProductUI::startInterface() {
 	(*out_fp) << "3.2. 등록 상품 조회\n";

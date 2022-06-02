@@ -6,7 +6,7 @@
 
 
 PrintStatistics::PrintStatistics(ofstream* outfp, ifstream* infp, MemberList* memList) {
-	boundary = new PrintStatisticsUI(outfp, infp);
+	boundary = new PrintStatisticsUI(outfp, infp, this);
 	memberList = memList;
 
 
@@ -15,30 +15,43 @@ PrintStatistics::PrintStatistics(ofstream* outfp, ifstream* infp, MemberList* me
 
 }
 
-void PrintStatistics::showProduct() {
+void PrintStatistics::showStatistics() {
 	if (memberList->checkNowLoginMember() == false) {
 		boundary->loginFailed();
 	}
 	else {
 		vector<Product*>* soldOutProductVector = memberList->getNowLoginMember()->getSoldOutProductVector();
-		if (soldOutProductVector->size() == 0)
+		vector<Product*>* sellingProductVector = memberList->getNowLoginMember()->getSellingProductVector();
+		//cout << "5.1. 판매 상품 통계\n";
+		if (soldOutProductVector->size() == 0 && sellingProductVector->size() == 0)
 		{
-			boundary->inquirySoldOutProductFailed();
+			boundary->printStatisticsFailed();
+			
+			//cout << "> 판매된 상품이 없습니다\n";
 		}
 		else
 		{
 			for (int i = 0; i < soldOutProductVector->size(); i++)
 			{
 				Product* nowLookingProduct = (*soldOutProductVector)[i];
-
-				nowLookingProduct->printSoldProductList();
-				boundary->inquirySoldOutProductSuccess(nowLookingProduct->getProductName(),
-					nowLookingProduct->getmadeCompanyName(), nowLookingProduct->getproductPrice(), nowLookingProduct->getSelledProductQuantity(),
+				boundary->printStatisticsSuccess(nowLookingProduct->getProductName(),
+					nowLookingProduct->getSelledProductQuantity()*nowLookingProduct->getproductPrice(),
+					nowLookingProduct->getAverageSatisfaction());
+			}
+			for (int i = 0; i < sellingProductVector->size(); i++)
+			{
+				Product* nowLookingProduct = (*sellingProductVector)[i];
+				if (nowLookingProduct->getSelledProductQuantity() == 0) {
+					continue;
+				}
+				boundary->printStatisticsSuccess(nowLookingProduct->getProductName(),
+					nowLookingProduct->getSelledProductQuantity()*nowLookingProduct->getproductPrice(),
 					nowLookingProduct->getAverageSatisfaction());
 			}
 			boundary->endOfLine();
-
 		}
+		
+		//cout << "\n";
 	}
 
 }

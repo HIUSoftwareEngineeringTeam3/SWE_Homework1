@@ -16,7 +16,7 @@ private:
 	ofstream* out_fp;
 	ifstream* in_fp;
 public:
-	InquirySellingProductUI(ofstream* outfp, ifstream* infp);
+	InquirySellingProductUI(ofstream* outfp, ifstream* infp, InquirySellingProduct* controlClass);
 	void startInterface();
 	void clickInquiryProduct();
 	void inquiryProductFailed();

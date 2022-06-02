@@ -16,7 +16,7 @@ private:
 	ofstream* out_fp;
 	ifstream* in_fp;
 public:
-	RemoveMemberUI(ofstream* outfp, ifstream* infp);
+	RemoveMemberUI(ofstream* outfp, ifstream* infp, RemoveMember* controlClass);
 	void startInterface();
 	void clickRemoveMember();
 	void removeMemberFail();
