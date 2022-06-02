@@ -30,13 +30,13 @@ public:
 	vector<Product*>*  getSellingProductVector();
 	vector<Product*>*  getSoldOutProductVector();
 	vector<Product*>*  getBoughtProductVector();
-	void boughtProductList();
+
 	void registerProduct(string productName, string madeCompanyName, int productPrice, int productQuantity);
-	void printSelledProductStatistics();
-	void evaluateSatisfaction(string productName, int evaluateNum);
-	void inquirySoldProductList();
-	void searchProductDetail(string productName);
-	void purchaseProduct();
+
+
+
+
+
 	void productSoldOut(Product* product);
 	void deleteMemory();
 };

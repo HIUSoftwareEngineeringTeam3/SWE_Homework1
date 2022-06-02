@@ -29,12 +29,12 @@ public:
 	string getmadeCompanyName();
 	int getproductPrice();
 	Member* getSellingMember();
-	void printMyProducts();
-	void printBoughtProducts();
+
+
 	void evaluateSatisfaction(int evaluateNum);
-	void printStatistics();
+
 	float getAverageSatisfaction();
-	void printSoldProductList();
+
 	int remainProductQuantity();
 	void buyProduct();
 	bool getNowSelling();

@@ -44,27 +44,8 @@ Member* Product::getSellingMember()
 	return sellingMember;
 }
 
-void Product::printMyProducts()
-{
-	(*out_fp) << "> " << productName << " " << madeCompanyName << " " << productPrice << " " << productQuantity << "\n";
-	//cout << "> " << productName << " " << madeCompanyName << " " << productPrice << " " << productQuantity << "\n";
-}
 
-void Product::printBoughtProducts()
-{
-	(*out_fp) << "> " << getSellingMember()->getMemberID() << " " << productName << " " << madeCompanyName << " " << productPrice << " " << remainProductQuantity() << " ";
-	//cout << "> " << getSellingMember()->getMemberID() << " " << productName << " " << madeCompanyName << " " << productPrice << " " << remainProductQuantity() << " ";
-	if (satisfactionQuantity == 0) {
-		(*out_fp) << "평가되지 않음";
-		//cout << "평가되지 않음";
-	}
-	else {
-		(*out_fp) << getAverageSatisfaction();
-		//cout << getAverageSatisfaction();
-	}
-	(*out_fp) << "\n";
-	//cout << "\n";
-}
+
 
 void Product::evaluateSatisfaction(int evaluateNum)
 {
@@ -72,21 +53,7 @@ void Product::evaluateSatisfaction(int evaluateNum)
 	satisfactionQuantity++;
 }
 
-void Product::printStatistics()
-{
-	(*out_fp)<< "> " << productName << " " << selledProductQuantity * productPrice << " ";
-//	cout<<"> " << productName << " " << selledProductQuantity * productPrice << " ";
-	if (satisfactionQuantity == 0) {
-		(*out_fp) << "평가되지 않음";
-	//	cout << "평가되지 않음";
-	}
-	else {
-		(*out_fp) << getAverageSatisfaction();
-	//	cout << getAverageSatisfaction();
-	}
-	(*out_fp) << "\n";
-	//cout << "\n";
-}
+
 
 float Product::getAverageSatisfaction()
 {
@@ -101,22 +68,6 @@ float Product::getAverageSatisfaction()
 	return avg;
 }
 
-/*
- 함수 이름 : inquirySoldProductList
- 기능 : 판매 완료된 상품 조회
- 매개변수 : 없음
- 반환값 : 없음
-*/
-void Product::printSoldProductList()
-{
-	(*out_fp) << "> " << getProductName() << " " << getmadeCompanyName() << " " << getproductPrice() << " " << selledProductQuantity << " " << getAverageSatisfaction();
-
-	(*out_fp) << "\n";
-
-	//cout << "> " << getProductName() << " " << getmadeCompanyName() << " " << getproductPrice() << " " << selledProductQuantity << " " << getAverageSatisfaction();
-
-	//cout << "\n";
-}
 
 /*
  함수 이름 : remainProductQuantity
