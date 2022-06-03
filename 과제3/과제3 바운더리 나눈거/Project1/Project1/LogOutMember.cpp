@@ -1,16 +1,17 @@
 #include "LogOutMember.h"
 #include "LogOutMemberUI.h"
 #include "Member.h"
-#include "MemberList.h"
+#include "MemberCollection.h"
+#include "ProductCollection.h"
 
 
-LogOutMember::LogOutMember(ofstream* outfp, ifstream* infp, MemberList* memList) {
+LogOutMember::LogOutMember(ofstream* outfp, ifstream* infp, MemberCollection* memList) {
 	boundary = new LogOutMemberUI(outfp, infp, this);
-	memberList = memList;
+	memberCollection = memList;
 	boundary->startInterface();
 }
 void LogOutMember::checkLogoutMember() {
-	if (memberList->checkNowLoginMember()==true) {
+	if (memberCollection->checkNowLoginMember()==true) {
 		memberLogout();
 	}
 	else {
@@ -18,8 +19,8 @@ void LogOutMember::checkLogoutMember() {
 	}
 }
 void LogOutMember::memberLogout() {
-	boundary->logOutMemberSuccess(memberList->getNowLoginMember()->getMemberID());
-	memberList->logOutMember();
+	boundary->logOutMemberSuccess(memberCollection->getNowLoginMember()->getMemberID());
+	memberCollection->logOutMember();
 }
 
 LogOutMemberUI* LogOutMember::getBoundary() {

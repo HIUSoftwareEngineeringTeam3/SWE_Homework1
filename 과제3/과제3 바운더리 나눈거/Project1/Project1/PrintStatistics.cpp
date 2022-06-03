@@ -1,13 +1,14 @@
 #include "PrintStatisticsUI.h"
 #include "PrintStatistics.h"
 #include "Member.h"
-#include "MemberList.h"
+#include "MemberCollection.h"
+#include "ProductCollection.h"
 #include "Product.h"
 
 
-PrintStatistics::PrintStatistics(ofstream* outfp, ifstream* infp, MemberList* memList) {
+PrintStatistics::PrintStatistics(ofstream* outfp, ifstream* infp, MemberCollection* memList) {
 	boundary = new PrintStatisticsUI(outfp, infp, this);
-	memberList = memList;
+	memberCollection = memList;
 
 
 	boundary->startInterface();
@@ -16,12 +17,12 @@ PrintStatistics::PrintStatistics(ofstream* outfp, ifstream* infp, MemberList* me
 }
 
 void PrintStatistics::showStatistics() {
-	if (memberList->checkNowLoginMember() == false) {
+	if (memberCollection->checkNowLoginMember() == false) {
 		boundary->loginFailed();
 	}
 	else {
-		vector<Product*>* soldOutProductVector = memberList->getNowLoginMember()->getSoldOutProductVector();
-		vector<Product*>* sellingProductVector = memberList->getNowLoginMember()->getSellingProductVector();
+		vector<Product*>* soldOutProductVector = memberCollection->getNowLoginMember()->getSoldOutProductCollection()->getProductVector();
+		vector<Product*>* sellingProductVector = memberCollection->getNowLoginMember()->getSellingProductCollection()->getProductVector();
 		//cout << "5.1. 판매 상품 통계\n";
 		if (soldOutProductVector->size() == 0 && sellingProductVector->size() == 0)
 		{
@@ -35,7 +36,7 @@ void PrintStatistics::showStatistics() {
 			{
 				Product* nowLookingProduct = (*soldOutProductVector)[i];
 				boundary->printStatisticsSuccess(nowLookingProduct->getProductName(),
-					nowLookingProduct->getSelledProductQuantity()*nowLookingProduct->getproductPrice(),
+					nowLookingProduct->getSelledProductQuantity()*nowLookingProduct->getProductPrice(),
 					nowLookingProduct->getAverageSatisfaction());
 			}
 			for (int i = 0; i < sellingProductVector->size(); i++)
@@ -45,7 +46,7 @@ void PrintStatistics::showStatistics() {
 					continue;
 				}
 				boundary->printStatisticsSuccess(nowLookingProduct->getProductName(),
-					nowLookingProduct->getSelledProductQuantity()*nowLookingProduct->getproductPrice(),
+					nowLookingProduct->getSelledProductQuantity()*nowLookingProduct->getProductPrice(),
 					nowLookingProduct->getAverageSatisfaction());
 			}
 			boundary->endOfLine();

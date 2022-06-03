@@ -7,16 +7,16 @@
 using namespace std;
 
 class Member;
-class MemberList;
+class MemberCollection;
 
 class RegisterProductUI;
 class RegisterProduct {
 private:
 	RegisterProductUI* boundary;
-	MemberList* memberList;
+	MemberCollection* memberCollection;
 
 public:
-	RegisterProduct(ofstream* outfp, ifstream* infp, MemberList* memList);
+	RegisterProduct(ofstream* outfp, ifstream* infp, MemberCollection* memList);
 	void registerProduct(string productName, string companyName, int price, int quantity);
 	RegisterProductUI* getBoundary();
 

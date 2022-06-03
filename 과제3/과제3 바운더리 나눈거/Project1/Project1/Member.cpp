@@ -1,14 +1,13 @@
 #include "Member.h"
 #include "Product.h"
+#include "MemberCollection.h"
+#include "ProductCollection.h"
 
-ofstream* Member::out_fp;
-vector<Member*>* Member::wholeMemberVector;
-
-Member::Member(ofstream* fp, vector<Member*>* memberVector)
-{
-	out_fp = fp;
-	wholeMemberVector = memberVector;
-}
+//Member::Member(ofstream* fp, vector<Member*>* memberVector)
+//{
+//	out_fp = fp;
+//	wholeMemberVector = memberVector;
+//}
 
 Member::Member(string name, string number, string id, string pwd)
 {
@@ -31,20 +30,30 @@ string Member::getMemberPWD() {
 	return memberPWD;
 }
 
-vector<Product*>*  Member::getSellingProductVector()
-{
-	return &sellingProductVector;
-}
+//vector<Product*>*  Member::getSellingProductVector()
+//{
+//	return &sellingProductCollection;
+//}
+//
+//vector<Product*>*  Member::getSoldOutProductVector()
+//{
+//	return &soldOutProdcutCollection;
+//}
+//vector<Product*>*  Member::getBoughtProductVector()
+//{
+//	return &boughtProductCollection;
+//}
+//
 
-vector<Product*>*  Member::getSoldOutProductVector()
-{
-	return &soldOutProductVector;
+ProductCollection*  Member::getSellingProductCollection() {
+	return &sellingProductCollection;
 }
-vector<Product*>*  Member::getBoughtProductVector()
-{
-	return &boughtProductVector;
+ProductCollection*  Member::getSoldOutProductCollection() {
+	return &soldOutProductCollection;
 }
-
+ProductCollection*  Member::getBoughtProductCollection() {
+	return &boughtProductCollection;
+}
 
 
 
@@ -53,7 +62,7 @@ vector<Product*>*  Member::getBoughtProductVector()
 void Member::registerProduct(string productName, string madeCompanyName, int productPrice, int productQuantity)
 {
 	Product* newProduct = new Product(this,productName, madeCompanyName, productPrice, productQuantity);
-	sellingProductVector.push_back(newProduct);
+	sellingProductCollection.pushProduct(newProduct);
 
 	//(*out_fp) << "3.1. 판매 의류 등록\n> " << productName << " " << madeCompanyName << " " << productPrice << " " << productQuantity << "\n\n";
 	//cout << "3.1. 판매 의류 등록\n> " << productName << " " << madeCompanyName << " " << productPrice << " " << productQuantity << "\n\n";
@@ -64,22 +73,19 @@ void Member::registerProduct(string productName, string madeCompanyName, int pro
 
 void Member::productSoldOut(Product* product)
 {
-	auto soldOutProduct = find(sellingProductVector.begin(), sellingProductVector.end(), product);
-	if (soldOutProduct != sellingProductVector.end())
-	{
-		//cout << product->getProductName() << "은 다팔렸어용\n\n";
-		sellingProductVector.erase(soldOutProduct);
-		soldOutProductVector.push_back(product);
-	}
+	sellingProductCollection.eraseProdcut(product);
+	soldOutProductCollection.pushProduct(product);
+	//auto soldOutProduct = find(sellingProductCollection.begin(), sellingProductCollection.end(), product);
+	//if (soldOutProduct != sellingProductCollection.end())
+	//{
+	//	//cout << product->getProductName() << "은 다팔렸어용\n\n";
+	//	sellingProductCollection.erase(soldOutProduct);
+	//	soldOutProdcutCollection.push_back(product);
+	//}
 }
 
 void Member::deleteMemory() {
-	int sellSize = sellingProductVector.size();
-	int soldSize = soldOutProductVector.size();
-	for (int i = 0; i < sellSize; i++) {
-		delete sellingProductVector[i];
-	}
-	for (int i = 0; i < soldSize; i++) {
-		delete soldOutProductVector[i];
-	}
+	sellingProductCollection.deleteMemory();
+	soldOutProductCollection.deleteMemory();
+
 }

@@ -72,9 +72,6 @@
     <ClCompile Include="Member.cpp">
       <Filter>소스 파일\Entity</Filter>
     </ClCompile>
-    <ClCompile Include="MemberList.cpp">
-      <Filter>소스 파일\Entity</Filter>
-    </ClCompile>
     <ClCompile Include="Product.cpp">
       <Filter>소스 파일\Entity</Filter>
     </ClCompile>
@@ -141,6 +138,12 @@
     <ClCompile Include="InquirySellingProductUI.cpp">
       <Filter>소스 파일\InquirySellingProduct</Filter>
     </ClCompile>
+    <ClCompile Include="ProductCollection.cpp">
+      <Filter>소스 파일\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="MemberCollection.cpp">
+      <Filter>소스 파일\Entity</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AddNewMember.h">
@@ -156,9 +159,6 @@
       <Filter>소스 파일\RemoveMember</Filter>
     </ClInclude>
     <ClInclude Include="Member.h">
-      <Filter>소스 파일\Entity</Filter>
-    </ClInclude>
-    <ClInclude Include="MemberList.h">
       <Filter>소스 파일\Entity</Filter>
     </ClInclude>
     <ClInclude Include="Product.h">
@@ -223,6 +223,12 @@
     </ClInclude>
     <ClInclude Include="InquirySellingProductUI.h">
       <Filter>소스 파일\InquirySellingProduct</Filter>
+    </ClInclude>
+    <ClInclude Include="ProductCollection.h">
+      <Filter>소스 파일\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="MemberCollection.h">
+      <Filter>소스 파일\Entity</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

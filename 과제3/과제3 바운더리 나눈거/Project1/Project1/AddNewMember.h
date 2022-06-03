@@ -7,18 +7,18 @@
 using namespace std;
 
 class Member;
-class MemberList;
+class MemberCollection;
 class AddNewMemberUI;
 
 
 class AddNewMember {
 private:
 	AddNewMemberUI* boundary;
-	MemberList* memberList;
+	MemberCollection* memberCollection;
 	string memberName, memberSsn, memberID, memberPWD;
 	bool checkMemberID(string name, string ssn, string id, string pwd);
 public:
-	AddNewMember(ofstream* outfp, ifstream* infp,MemberList* memList);
+	AddNewMember(ofstream* outfp, ifstream* infp,MemberCollection* memList);
 	AddNewMemberUI* getBoundary();
 	void addNewMember(string name, string ssn, string id, string pwd);
 	

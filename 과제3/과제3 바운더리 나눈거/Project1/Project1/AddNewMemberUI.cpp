@@ -1,7 +1,8 @@
 #include "AddNewMember.h"
 #include "AddNewMemberUI.h"
 #include "Member.h"
-#include "MemberList.h"
+#include "MemberCollection.h"
+#include "ProductCollection.h"
 #include "Product.h"
 
 

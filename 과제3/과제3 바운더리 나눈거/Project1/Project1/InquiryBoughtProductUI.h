@@ -7,7 +7,7 @@
 using namespace std;
 
 class Member;
-class MemberList;
+class MemberCollection;
 
 class InquiryBoughtProduct;
 class InquiryBoughtProductUI {

@@ -1,13 +1,14 @@
 #include "PurchaseProduct.h"
 #include "PurchaseProductUI.h"
 #include "Member.h"
-#include "MemberList.h"
+#include "MemberCollection.h"
+#include "ProductCollection.h"
 #include "Product.h"
 
 
-PurchaseProduct::PurchaseProduct(ofstream* outfp, ifstream* infp, MemberList* memList) {
+PurchaseProduct::PurchaseProduct(ofstream* outfp, ifstream* infp, MemberCollection* memList) {
 	boundary = new PurchaseProductUI(outfp, infp, this);
-	memberList = memList;
+	memberCollection = memList;
 
 	boundary->startInterface();
 
@@ -20,11 +21,11 @@ PurchaseProductUI* PurchaseProduct::getBoundary() {
 
 void PurchaseProduct::purchaseProduct()
 {
-	if (memberList->checkNowLoginMember() == false) {
+	if (memberCollection->checkNowLoginMember() == false) {
 		boundary->loginFailed();
 	}
 	else {
-		Member* nowLoginMember = memberList->getNowLoginMember();
+		Member* nowLoginMember = memberCollection->getNowLoginMember();
 		Product* searchingProduct = nowLoginMember->searchingProduct;
 		if (searchingProduct == NULL)
 		{
@@ -41,7 +42,8 @@ void PurchaseProduct::purchaseProduct()
 				
 				boundary->purchaseSuccess(searchingProduct->getSellingMember()->getMemberID(), searchingProduct->getProductName());
 				searchingProduct->buyProduct();
-				nowLoginMember->getBoughtProductVector()->push_back(searchingProduct);
+				//nowLoginMember->getBoughtProductCollection()->push_back(searchingProduct);
+				nowLoginMember->getBoughtProductCollection()->pushProduct(searchingProduct);
 				nowLoginMember->searchingProduct = NULL;
 			}
 

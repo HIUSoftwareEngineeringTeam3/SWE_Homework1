@@ -7,16 +7,16 @@
 using namespace std;
 
 class Member;
-class MemberList;
+class MemberCollection;
 
 class LogOutMemberUI;
 class LogOutMember {
 private:
 	LogOutMemberUI* boundary;
-	MemberList* memberList;
+	MemberCollection* memberCollection;
 
 public:
-	LogOutMember(ofstream* outfp, ifstream* infp, MemberList* memList);
+	LogOutMember(ofstream* outfp, ifstream* infp, MemberCollection* memList);
 	LogOutMemberUI* getBoundary();
 	void checkLogoutMember();
 	void memberLogout();

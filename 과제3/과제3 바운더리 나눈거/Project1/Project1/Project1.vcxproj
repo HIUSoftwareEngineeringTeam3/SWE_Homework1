@@ -35,10 +35,11 @@
     <ClCompile Include="LogOutMemberUI.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Member.cpp" />
-    <ClCompile Include="MemberList.cpp" />
+    <ClCompile Include="MemberCollection.cpp" />
     <ClCompile Include="PrintStatistics.cpp" />
     <ClCompile Include="PrintStatisticsUI.cpp" />
     <ClCompile Include="Product.cpp" />
+    <ClCompile Include="ProductCollection.cpp" />
     <ClCompile Include="ProductSearch.cpp" />
     <ClCompile Include="ProductSearchUI.cpp" />
     <ClCompile Include="PurchaseProduct.cpp" />
@@ -64,10 +65,11 @@
     <ClInclude Include="LogOutMember.h" />
     <ClInclude Include="LogOutMemberUI.h" />
     <ClInclude Include="Member.h" />
-    <ClInclude Include="MemberList.h" />
+    <ClInclude Include="MemberCollection.h" />
     <ClInclude Include="PrintStatistics.h" />
     <ClInclude Include="PrintStatisticsUI.h" />
     <ClInclude Include="Product.h" />
+    <ClInclude Include="ProductCollection.h" />
     <ClInclude Include="ProductSearch.h" />
     <ClInclude Include="ProductSearchUI.h" />
     <ClInclude Include="PurchaseProduct.h" />

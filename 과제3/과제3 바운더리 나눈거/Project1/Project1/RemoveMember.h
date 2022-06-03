@@ -7,16 +7,16 @@
 using namespace std;
 
 class Member;
-class MemberList;
+class MemberCollection;
 
 class RemoveMemberUI;
 class RemoveMember {
 private:
 	RemoveMemberUI* boundary;
-	MemberList* memberList;
+	MemberCollection* memberCollection;
 
 public:
-	RemoveMember(ofstream* outfp, ifstream* infp, MemberList* memList);
+	RemoveMember(ofstream* outfp, ifstream* infp, MemberCollection* memList);
 	RemoveMemberUI* getBoundary();
 	void removeMember();
 

@@ -1,10 +1,10 @@
 #include "RemoveMember.h"
 #include "RemoveMemberUI.h"
-#include "MemberList.h"
+#include "MemberCollection.h"
 
-RemoveMember::RemoveMember(ofstream* outfp, ifstream* infp, MemberList* memList) {
+RemoveMember::RemoveMember(ofstream* outfp, ifstream* infp, MemberCollection* memList) {
 	boundary = new RemoveMemberUI(outfp, infp, this);
-	memberList = memList;
+	memberCollection = memList;
 	boundary->startInterface();
 	
 }
@@ -15,12 +15,12 @@ RemoveMemberUI* RemoveMember::getBoundary() {
 
 
 void RemoveMember::removeMember() {
-	if (memberList->checkNowLoginMember() == false) {
+	if (memberCollection->checkNowLoginMember() == false) {
 		boundary->removeMemberFail();
 	}
 	else {
-		boundary->removeMemberSuccess(memberList->getNowLoginMember());
-		memberList->removeMember();
+		boundary->removeMemberSuccess(memberCollection->getNowLoginMember());
+		memberCollection->removeMember();
 	}
 
 }

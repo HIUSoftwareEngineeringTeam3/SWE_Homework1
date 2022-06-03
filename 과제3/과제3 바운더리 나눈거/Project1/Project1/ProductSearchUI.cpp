@@ -19,10 +19,10 @@ void ProductSearchUI::productListFailed() {
 void ProductSearchUI::productListSuccess(string sellerID,string productName, string companyName, int price, int quantity, float averageSatisfaction) {
 	(*out_fp)  << sellerID << " " << productName << " " << companyName << " " << price << " " << quantity << " ";
 	if (averageSatisfaction == 0) {
-		(*out_fp) <<averageSatisfaction << "\n\n";
+		(*out_fp) << "평가되지 않음\n\n";
 	}
 	else{
-		(*out_fp) << "평가되지 않음\n\n";
+		(*out_fp) << averageSatisfaction << "\n\n";
 	}
 	//리메인
 	

@@ -1,13 +1,14 @@
 #include "InquirySoldProductUI.h"
 #include "InquirySoldProduct.h"
 #include "Member.h"
-#include "MemberList.h"
+#include "MemberCollection.h"
+#include "ProductCollection.h"
 #include "Product.h"
 
 
-InquirySoldProduct::InquirySoldProduct(ofstream* outfp, ifstream* infp, MemberList* memList) {
+InquirySoldProduct::InquirySoldProduct(ofstream* outfp, ifstream* infp, MemberCollection* memList) {
 	boundary = new InquirySoldProductUI(outfp, infp, this);
-	memberList = memList;
+	memberCollection = memList;
 
 
 	boundary->startInterface();
@@ -16,11 +17,11 @@ InquirySoldProduct::InquirySoldProduct(ofstream* outfp, ifstream* infp, MemberLi
 }
 
 void InquirySoldProduct::showProduct() {
-	if (memberList->checkNowLoginMember()==false) {
+	if (memberCollection->checkNowLoginMember()==false) {
 		boundary->loginFailed();
 	}
 	else {
-		vector<Product*>* soldOutProductVector = memberList->getNowLoginMember()->getSoldOutProductVector();
+		vector<Product*>* soldOutProductVector = memberCollection->getNowLoginMember()->getSoldOutProductCollection()->getProductVector();
 		if (soldOutProductVector->size() == 0)
 		{
 			boundary->inquirySoldOutProductFailed();
@@ -31,7 +32,7 @@ void InquirySoldProduct::showProduct() {
 			{
 				Product* nowLookingProduct = (*soldOutProductVector)[i];
 				boundary->inquirySoldOutProductSuccess(nowLookingProduct->getProductName(),
-					nowLookingProduct->getmadeCompanyName(), nowLookingProduct->getproductPrice(), nowLookingProduct->getSelledProductQuantity(),
+					nowLookingProduct->getMadeCompanyName(), nowLookingProduct->getProductPrice(), nowLookingProduct->getSelledProductQuantity(),
 					nowLookingProduct->getAverageSatisfaction());
 			}
 			boundary->endOfLine();

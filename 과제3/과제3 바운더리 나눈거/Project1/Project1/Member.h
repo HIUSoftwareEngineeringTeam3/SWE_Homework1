@@ -1,4 +1,5 @@
 #pragma once
+#include "ProductCollection.h"
 #include <string>
 #include <vector>
 #include <iostream>
@@ -7,6 +8,7 @@
 using namespace std;
 
 class Product;
+//class ProductCollection;
 
 class Member {
 private:
@@ -14,28 +16,29 @@ private:
 	string memberNumber;
 	string memberID;
 	string memberPWD;
-	vector<Product*> sellingProductVector;
-	vector<Product*> soldOutProductVector;
-	vector<Product*> boughtProductVector;
-	static vector<Member*>* wholeMemberVector;
-	static ofstream* out_fp;
+	//vector<Product*> sellingProductCollection;
+	//vector<Product*> soldOutProdcutCollection;
+	//vector<Product*> boughtProductCollection;
+	ProductCollection sellingProductCollection;
+	ProductCollection soldOutProductCollection;
+	ProductCollection boughtProductCollection;
 public:
-	Member(ofstream* fp,vector<Member*>* memberVector);
+	//Member(ofstream* fp,vector<Member*>* memberVector);
 	Member(string name, string number, string id, string pwd);
 	string getMemberName();
 	string getMemberNumber();
 	string getMemberID();
 	string getMemberPWD();
 	Product* searchingProduct;
-	vector<Product*>*  getSellingProductVector();
-	vector<Product*>*  getSoldOutProductVector();
-	vector<Product*>*  getBoughtProductVector();
+	//vector<Product*>*  getSellingProductCollection();
+	//vector<Product*>*  getSoldOutProductCollection();
+	//vector<Product*>*  getBoughtProductCollection();
+
+	ProductCollection*  getSellingProductCollection();
+	ProductCollection*  getSoldOutProductCollection();
+	ProductCollection*  getBoughtProductCollection();
 
 	void registerProduct(string productName, string madeCompanyName, int productPrice, int productQuantity);
-
-
-
-
 
 	void productSoldOut(Product* product);
 	void deleteMemory();

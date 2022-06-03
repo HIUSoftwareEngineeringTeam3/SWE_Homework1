@@ -7,15 +7,15 @@
 using namespace std;
 
 class Member;
-class MemberList;
+class MemberCollection;
 
 class LoginMemberUI;
 class LoginMember {
 private:
 	LoginMemberUI* boundary;
-	MemberList* memberList;
+	MemberCollection* memberCollection;
 public:
-	LoginMember(ofstream* outfp, ifstream* infp, MemberList* memList);
+	LoginMember(ofstream* outfp, ifstream* infp, MemberCollection* memList);
 	LoginMemberUI* getBoundary();
 	void checkID_PW(string id, string pwd);
 

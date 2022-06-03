@@ -39,7 +39,7 @@
 > 판매 완료된 상품이 없습니다.
 
 4.1. 상품 정보 검색
-> mbc tshirt nono 2000 3 0
+> mbc tshirt nono 2000 3 평가되지 않음
 
 4.2. 상품 구매
 > mbc tshirt
@@ -48,7 +48,7 @@
 > lee tshirt tshirt 1
 
 4.1. 상품 정보 검색
-> mbc hat chulsoo 2000 2 0
+> mbc hat chulsoo 2000 2 평가되지 않음
 
 4.2. 상품 구매
 > mbc hat
@@ -75,7 +75,7 @@
 > 판매된 상품이 없습니다
 
 4.1. 상품 정보 검색
-> mbc hat chulsoo 2000 1 평가되지 않음
+> mbc hat chulsoo 2000 1 4
 
 4.2. 상품 구매
 > mbc hat
@@ -93,7 +93,7 @@
 > lee hat hat 3.5
 
 4.1. 상품 정보 검색
-> mbc tshirt nono 2000 2 평가되지 않음
+> mbc tshirt nono 2000 2 1
 
 4.2. 상품 구매
 > mbc tshirt
@@ -102,7 +102,7 @@
 > lee tshirt tshirt 2
 
 4.1. 상품 정보 검색
-> obs shoes younghee 2000 2 0
+> obs shoes younghee 2000 2 평가되지 않음
 
 4.2. 상품 구매
 > obs shoes
@@ -111,7 +111,7 @@
 > park shoes shoes 2
 
 4.1. 상품 정보 검색
-> obs wristband sanghun 2000 4 0
+> obs wristband sanghun 2000 4 평가되지 않음
 
 4.2. 상품 구매
 > obs wristband
@@ -132,7 +132,7 @@
 > dhk pwd2
 
 4.1. 상품 정보 검색
-> mbc tshirt nono 2000 1 평가되지 않음
+> mbc tshirt nono 2000 1 2
 
 4.2. 상품 구매
 > mbc tshirt

@@ -2,10 +2,12 @@
 
 // 헤더 선언
 #include "Product.h"
+#include "ProductCollection.h"
 #include "Member.h"
+#include "MemberCollection.h"
+
 #include "AddNewMember.h"
 #include "AddNewMemberUI.h"
-#include "MemberList.h"
 #include "RemoveMember.h"
 #include "RemoveMemberUI.h"
 #include "LoginMember.h"
@@ -28,6 +30,7 @@
 #include "EvaluateSatisfactionUI.h"
 #include "PrintStatisticsUI.h"
 #include "PrintStatistics.h"
+
 #include <iostream>
 #include <string>
 #include <vector>
@@ -62,7 +65,7 @@ void deleteMemory();
 //vector<Member*> memberVector;
 Member* nowLoginMember;
 //Product* nowSelectedProduct;
-MemberList memberList;
+MemberCollection memberList;
 ifstream in_fp;
 ofstream out_fp;
 int main()

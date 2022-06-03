@@ -1,12 +1,8 @@
 #include "Member.h"
 #include "Product.h"
+#include "MemberCollection.h"
+#include "ProductCollection.h"
 
-ofstream* Product::out_fp;
-
-Product::Product(ofstream* fp)
-{
-	out_fp = fp;
-}
 
 Product::Product(Member* seller,string pName, string companyName, int price, int quantity)
 {
@@ -31,11 +27,11 @@ string Product::getProductName()
 {
 	return productName;
 }
-string Product::getmadeCompanyName()
+string Product::getMadeCompanyName()
 {
 	return madeCompanyName;
 }
-int Product::getproductPrice()
+int Product::getProductPrice()
 {
 	return productPrice;
 }

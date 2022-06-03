@@ -1,17 +1,18 @@
 #include "LoginMember.h"
 #include "LoginMemberUI.h"
-#include "MemberList.h"
+#include "MemberCollection.h"
+#include "ProductCollection.h"
 
 
-LoginMember::LoginMember(ofstream* outfp, ifstream* infp, MemberList* memList) {
+LoginMember::LoginMember(ofstream* outfp, ifstream* infp, MemberCollection* memList) {
 	boundary = new LoginMemberUI(outfp, infp,this);
-	memberList = memList;
+	memberCollection = memList;
 	boundary->startInterface();
 }
 void LoginMember::checkID_PW(string id, string pwd) {
-	int checkType = memberList->checkValidID_PW(id, pwd);
+	int checkType = memberCollection->checkValidID_PW(id, pwd);
 	if (checkType==0) {
-		memberList->loginMember(id, pwd);
+		memberCollection->loginMember(id, pwd);
 		boundary->loginMemberSuccess(id,pwd);
 	}
 	else {

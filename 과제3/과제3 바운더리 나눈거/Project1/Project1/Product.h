@@ -21,13 +21,11 @@ private:
 	int satisfactionNumber;
 	int satisfactionQuantity;
 	bool nowSelling;
-	static ofstream* out_fp;
 public:
-	Product(ofstream* fp);
 	Product(Member* seller, string pName, string companyName, int price, int quantity);
 	string getProductName();
-	string getmadeCompanyName();
-	int getproductPrice();
+	string getMadeCompanyName();
+	int getProductPrice();
 	Member* getSellingMember();
 
 

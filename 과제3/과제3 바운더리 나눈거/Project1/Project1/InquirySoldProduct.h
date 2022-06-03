@@ -7,16 +7,16 @@
 using namespace std;
 
 class Member;
-class MemberList;
+class MemberCollection;
 
 class InquirySoldProductUI;
 class InquirySoldProduct {
 private:
 	InquirySoldProductUI* boundary;
-	MemberList* memberList;
+	MemberCollection* memberCollection;
 
 public:
-	InquirySoldProduct(ofstream* outfp, ifstream* infp, MemberList* memList);
+	InquirySoldProduct(ofstream* outfp, ifstream* infp, MemberCollection* memList);
 	void showProduct();
 	InquirySoldProductUI* getBoundary();
 

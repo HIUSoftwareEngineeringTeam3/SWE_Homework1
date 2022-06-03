@@ -1,24 +1,25 @@
 #include "EvaluateSatisfaction.h"
 #include "EvaluateSatisfactionUI.h"
 #include "Member.h"
-#include "MemberList.h"
+#include "MemberCollection.h"
+#include "ProductCollection.h"
 #include "Product.h"
 
 
-EvaluateSatisfaction::EvaluateSatisfaction(ofstream* outfp, ifstream* infp, MemberList* memList) {
+EvaluateSatisfaction::EvaluateSatisfaction(ofstream* outfp, ifstream* infp, MemberCollection* memList) {
 	boundary = new EvaluateSatisfactionUI(outfp, infp,this);
-	memberList = memList;
+	memberCollection = memList;
 	boundary->startInterface();
 
 }
 
 void EvaluateSatisfaction::confirmScore(string productName, int evaluateNum) {
-	if (memberList->checkNowLoginMember()==false) {
+	if (memberCollection->checkNowLoginMember()==false) {
 		boundary->loginFailed();
 	}
 	else {
 		Product* evaluatingProduct = NULL;
-		vector<Product*>* boughtProductVector = memberList->getNowLoginMember()->getBoughtProductVector();
+		vector<Product*>* boughtProductVector = memberCollection->getNowLoginMember()->getBoughtProductCollection()->getProductVector();
 		for (int i = 0; i < boughtProductVector->size(); i++)
 		{
 			Product* nowLookingProduct = (*boughtProductVector)[i];
