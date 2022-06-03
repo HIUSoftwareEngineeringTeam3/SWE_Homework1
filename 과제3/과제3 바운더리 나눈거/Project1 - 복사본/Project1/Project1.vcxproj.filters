@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\AddNewMember">
+      <UniqueIdentifier>{98d028ec-fb15-414f-97cc-2076e8f740b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\RemoveMember">
+      <UniqueIdentifier>{2a073e6f-51f8-40d8-876c-565f2ccc3431}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Entity">
+      <UniqueIdentifier>{31863ac0-a6de-455b-bbc0-19df166b8406}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Actor">
+      <UniqueIdentifier>{2259635e-496c-45da-bc43-03307b8cca3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\LogOutMember">
+      <UniqueIdentifier>{946aea89-74f0-4285-bf2a-47ff2d35ba3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\RegisterProduct">
+      <UniqueIdentifier>{421b5cea-5013-44f8-a2fc-94c5231505bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\InquirySoldProduct">
+      <UniqueIdentifier>{f46b0787-f1f3-4ac3-b485-e805405ffe63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\ProductSearch">
+      <UniqueIdentifier>{b962cd41-bb2d-4e34-b2d0-3b6a6730cfca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\LoginMember">
+      <UniqueIdentifier>{fbdcf64d-f2c3-47d7-97da-9f66bfac7d1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\PurchaseProduct">
+      <UniqueIdentifier>{e00ba543-1aaa-4b22-a78c-e1479f44a8d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\InquiryBoughtProduct">
+      <UniqueIdentifier>{e9ad7701-c42b-4046-a010-3e14e94fde77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\EvaluateSatisfaction">
+      <UniqueIdentifier>{2f7eefcc-e23b-4cfb-b838-1ab0e42060db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\PrintStatistics">
+      <UniqueIdentifier>{a12613b1-6434-4a60-8608-b0cdd5cda469}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\InquirySellingProduct">
+      <UniqueIdentifier>{6e94c0fe-1808-40f0-8825-7cf804af60ea}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AddNewMemberUI.cpp">
+      <Filter>소스 파일\AddNewMember</Filter>
+    </ClCompile>
+    <ClCompile Include="AddNewMember.cpp">
+      <Filter>소스 파일\AddNewMember</Filter>
+    </ClCompile>
+    <ClCompile Include="RemoveMember.cpp">
+      <Filter>소스 파일\RemoveMember</Filter>
+    </ClCompile>
+    <ClCompile Include="RemoveMemberUI.cpp">
+      <Filter>소스 파일\RemoveMember</Filter>
+    </ClCompile>
+    <ClCompile Include="Member.cpp">
+      <Filter>소스 파일\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="Product.cpp">
+      <Filter>소스 파일\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>소스 파일\Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginMember.cpp">
+      <Filter>소스 파일\LoginMember</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginMemberUI.cpp">
+      <Filter>소스 파일\LoginMember</Filter>
+    </ClCompile>
+    <ClCompile Include="LogOutMember.cpp">
+      <Filter>소스 파일\LogOutMember</Filter>
+    </ClCompile>
+    <ClCompile Include="LogOutMemberUI.cpp">
+      <Filter>소스 파일\LogOutMember</Filter>
+    </ClCompile>
+    <ClCompile Include="RegisterProduct.cpp">
+      <Filter>소스 파일\RegisterProduct</Filter>
+    </ClCompile>
+    <ClCompile Include="RegisterProductUI.cpp">
+      <Filter>소스 파일\RegisterProduct</Filter>
+    </ClCompile>
+    <ClCompile Include="InquirySoldProduct.cpp">
+      <Filter>소스 파일\InquirySoldProduct</Filter>
+    </ClCompile>
+    <ClCompile Include="InquirySoldProductUI.cpp">
+      <Filter>소스 파일\InquirySoldProduct</Filter>
+    </ClCompile>
+    <ClCompile Include="ProductSearch.cpp">
+      <Filter>소스 파일\ProductSearch</Filter>
+    </ClCompile>
+    <ClCompile Include="ProductSearchUI.cpp">
+      <Filter>소스 파일\ProductSearch</Filter>
+    </ClCompile>
+    <ClCompile Include="PurchaseProduct.cpp">
+      <Filter>소스 파일\PurchaseProduct</Filter>
+    </ClCompile>
+    <ClCompile Include="PurchaseProductUI.cpp">
+      <Filter>소스 파일\PurchaseProduct</Filter>
+    </ClCompile>
+    <ClCompile Include="InquiryBoughtProduct.cpp">
+      <Filter>소스 파일\InquiryBoughtProduct</Filter>
+    </ClCompile>
+    <ClCompile Include="InquiryBoughtProductUI.cpp">
+      <Filter>소스 파일\InquiryBoughtProduct</Filter>
+    </ClCompile>
+    <ClCompile Include="EvaluateSatisfaction.cpp">
+      <Filter>소스 파일\EvaluateSatisfaction</Filter>
+    </ClCompile>
+    <ClCompile Include="EvaluateSatisfactionUI.cpp">
+      <Filter>소스 파일\EvaluateSatisfaction</Filter>
+    </ClCompile>
+    <ClCompile Include="PrintStatistics.cpp">
+      <Filter>소스 파일\PrintStatistics</Filter>
+    </ClCompile>
+    <ClCompile Include="PrintStatisticsUI.cpp">
+      <Filter>소스 파일\PrintStatistics</Filter>
+    </ClCompile>
+    <ClCompile Include="InquirySellingProduct.cpp">
+      <Filter>소스 파일\InquirySellingProduct</Filter>
+    </ClCompile>
+    <ClCompile Include="InquirySellingProductUI.cpp">
+      <Filter>소스 파일\InquirySellingProduct</Filter>
+    </ClCompile>
+    <ClCompile Include="ProductCollection.cpp">
+      <Filter>소스 파일\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="MemberCollection.cpp">
+      <Filter>소스 파일\Entity</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AddNewMember.h">
+      <Filter>소스 파일\AddNewMember</Filter>
+    </ClInclude>
+    <ClInclude Include="AddNewMemberUI.h">
+      <Filter>소스 파일\AddNewMember</Filter>
+    </ClInclude>
+    <ClInclude Include="RemoveMember.h">
+      <Filter>소스 파일\RemoveMember</Filter>
+    </ClInclude>
+    <ClInclude Include="RemoveMemberUI.h">
+      <Filter>소스 파일\RemoveMember</Filter>
+    </ClInclude>
+    <ClInclude Include="Member.h">
+      <Filter>소스 파일\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Product.h">
+      <Filter>소스 파일\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="LoginMember.h">
+      <Filter>소스 파일\LoginMember</Filter>
+    </ClInclude>
+    <ClInclude Include="LoginMemberUI.h">
+      <Filter>소스 파일\LoginMember</Filter>
+    </ClInclude>
+    <ClInclude Include="LogOutMember.h">
+      <Filter>소스 파일\LogOutMember</Filter>
+    </ClInclude>
+    <ClInclude Include="LogOutMemberUI.h">
+      <Filter>소스 파일\LogOutMember</Filter>
+    </ClInclude>
+    <ClInclude Include="RegisterProduct.h">
+      <Filter>소스 파일\RegisterProduct</Filter>
+    </ClInclude>
+    <ClInclude Include="RegisterProductUI.h">
+      <Filter>소스 파일\RegisterProduct</Filter>
+    </ClInclude>
+    <ClInclude Include="InquirySoldProduct.h">
+      <Filter>소스 파일\InquirySoldProduct</Filter>
+    </ClInclude>
+    <ClInclude Include="InquirySoldProductUI.h">
+      <Filter>소스 파일\InquirySoldProduct</Filter>
+    </ClInclude>
+    <ClInclude Include="ProductSearchUI.h">
+      <Filter>소스 파일\ProductSearch</Filter>
+    </ClInclude>
+    <ClInclude Include="ProductSearch.h">
+      <Filter>소스 파일\ProductSearch</Filter>
+    </ClInclude>
+    <ClInclude Include="PurchaseProduct.h">
+      <Filter>소스 파일\PurchaseProduct</Filter>
+    </ClInclude>
+    <ClInclude Include="PurchaseProductUI.h">
+      <Filter>소스 파일\PurchaseProduct</Filter>
+    </ClInclude>
+    <ClInclude Include="InquiryBoughtProduct.h">
+      <Filter>소스 파일\InquiryBoughtProduct</Filter>
+    </ClInclude>
+    <ClInclude Include="InquiryBoughtProductUI.h">
+      <Filter>소스 파일\InquiryBoughtProduct</Filter>
+    </ClInclude>
+    <ClInclude Include="EvaluateSatisfaction.h">
+      <Filter>소스 파일\EvaluateSatisfaction</Filter>
+    </ClInclude>
+    <ClInclude Include="EvaluateSatisfactionUI.h">
+      <Filter>소스 파일\EvaluateSatisfaction</Filter>
+    </ClInclude>
+    <ClInclude Include="PrintStatistics.h">
+      <Filter>소스 파일\PrintStatistics</Filter>
+    </ClInclude>
+    <ClInclude Include="PrintStatisticsUI.h">
+      <Filter>소스 파일\PrintStatistics</Filter>
+    </ClInclude>
+    <ClInclude Include="InquirySellingProduct.h">
+      <Filter>소스 파일\InquirySellingProduct</Filter>
+    </ClInclude>
+    <ClInclude Include="InquirySellingProductUI.h">
+      <Filter>소스 파일\InquirySellingProduct</Filter>
+    </ClInclude>
+    <ClInclude Include="ProductCollection.h">
+      <Filter>소스 파일\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="MemberCollection.h">
+      <Filter>소스 파일\Entity</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

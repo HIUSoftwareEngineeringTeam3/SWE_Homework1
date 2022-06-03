@@ -1,0 +1,55 @@
+[yri7] Fri Jun 3 13:05:51 2022 +0900 최종 22f763b
+[yri7] Fri Jun 3 12:50:44 2022 +0900 list collection으로수정 58daa8f
+[yri7] Fri Jun 3 12:43:07 2022 +0900 최종diagram efa6e50
+[Wadaha] Fri Jun 3 11:43:44 2022 +0900 컬렉션으로 수정 690cf7b
+[heejin8273] Fri Jun 3 05:01:53 2022 +0900 최종보고서 초안 edd104f
+[yri7] Fri Jun 3 04:56:39 2022 +0900 폴더위치바꿈 f6f2210
+[yri7] Fri Jun 3 04:54:18 2022 +0900 req&des,designDiagram등등 c0a1942
+[heejin8273] Fri Jun 3 03:12:30 2022 +0900 draft diagram f08f342
+[Wadaha] Thu Jun 2 16:00:54 2022 +0900 안쓰는 함수 지우기 df0ae1a
+[Wadaha] Thu Jun 2 15:45:17 2022 +0900 과제 3 바운더리 나눈거 참고 dce291d
+[Wadaha] Thu Jun 2 14:50:50 2022 +0900 어느정도 다듬기 d90236d
+[Wadaha] Wed Jun 1 15:46:12 2022 +0900 cout지우고 메모리 delete함 bb91297
+[Wadaha] Wed Jun 1 13:53:53 2022 +0900 코드작성 끝. cout제거해야함 fd2ce61
+[heejin8273] Tue May 31 22:42:00 2022 +0900 희진코드 작성 e830153
+[yri7] Tue May 31 21:31:49 2022 +0900 유리코드작성 ea7ac9e
+[Wadaha] Tue May 31 12:26:26 2022 +0900 내부분 코드작성 5f91623
+[Wadaha] Mon May 30 17:53:35 2022 +0900 일분배 업로드 596de9f
+[Wadaha] Thu May 19 00:30:51 2022 +0900 과제2 제출 완료 4fde640
+[Wadaha] Thu May 19 00:27:07 2022 +0900 최종보고서 작성완료 a9817b0
+[yri7] Thu May 19 00:12:37 2022 +0900 반복문수정 08f4bda
+[heejin8273] Tue May 17 23:36:44 2022 +0900 0517 : communication 피드백 및 수정_고희진 1300d21
+[heejin8273] Tue May 17 18:26:22 2022 +0900 0517: 추가수정_고희진 72f112c
+[heejin8273] Tue May 17 18:17:41 2022 +0900 0517 : 과제2 수정_고희진 a3d5ec8
+[Wadaha] Sun May 15 18:49:27 2022 +0900 전체 초안 작성 완료 2768cdf
+[yri7] Sun May 15 18:20:09 2022 +0900 UseClass초안 d2f6afc
+[Heejin Go] Sun May 15 18:19:15 2022 +0900 comm, analysis 희진 995af32
+[Wadaha] Sun May 15 17:54:13 2022 +0900 useClass 초안완성 15d8000
+[Wadaha] Sun May 15 17:26:21 2022 +0900 일단푸시 0e1d4b1
+[Wadaha] Sun May 15 15:45:10 2022 +0900 팀초안 적음 1ae8035
+[Wadaha] Sun May 15 15:33:44 2022 +0900 팀초안 작성 3b21320
+[yri7] Sun May 15 14:46:34 2022 +0900 과제2 초안 3f1808f
+[Wadaha] Sun May 15 11:16:30 2022 +0900 과제2 use case diagram 초안작성 b9960dd
+[heejin8273] Sun May 15 02:14:50 2022 +0900 과제2 Requirement list_Use Case Descriptions_Use Case Diagram 초안 작성 edc4deb
+[yri7] Mon May 2 01:46:57 2022 +0900 2차 완성 c962728
+[Wadaha] Fri Apr 29 22:38:55 2022 +0900 0429 : 1차 완성. 86752fe
+[Wadaha] Fri Apr 29 22:36:59 2022 +0900 0429 : Requirment List 수정 758eca8
+[Wadaha] Fri Apr 29 22:36:18 2022 +0900 0429 : 대면으로 보고서 및 회의록 작성 작성 bd5da2a
+[yri7] Fri Apr 29 21:40:41 2022 +0900 Update UseCaseDiagram_초안.mdj 1e6de66
+[Wadaha] Fri Apr 29 21:40:02 2022 +0900 0429 : use case descrption 팀원들과 함께 피시방에서 작성 3628d69
+[Wadaha] Fri Apr 29 19:23:28 2022 +0900 0429 : use case diagram, requirment list에 삭제 추가 752ff0f
+[yri7] Fri Apr 29 06:22:11 2022 +0900 Update 통계 화면.png f983b4e
+[yri7] Fri Apr 29 06:03:33 2022 +0900 유리 화면 e1a35c8
+[heejin8273] Fri Apr 29 02:16:55 2022 +0900 Update UI Screen Design_고희진.pptx 4e66a86
+[heejin8273] Fri Apr 29 02:05:07 2022 +0900 0429 : UI Screen Design_고희진 62ed65a
+[Wadaha] Thu Apr 28 15:56:52 2022 +0900 0428: 상훈 화면 / 판매의류 조회,수정 6d8c2a0
+[Wadaha] Tue Apr 26 22:17:58 2022 +0900 0426 : 0426 회의 17d8544
+[Wadaha] Mon Apr 25 08:51:57 2022 +0900 0425 : 0424회의록 정리 ef576c6
+[heejin8273] Sun Apr 24 22:37:50 2022 +0900 0424 : UseCaseDiagram & Requirement List & Actor Description 2800ad1
+[yri7] Sat Apr 23 02:45:43 2022 +0900 Update 유리초안.mdj 618cbe7
+[heejin8273] Fri Apr 22 22:31:34 2022 +0900 0422 : Diagram extend 화살표 수정 3c1fe8a
+[Wadaha] Fri Apr 22 22:26:18 2022 +0900 0422 : 0422회의록 업로드 fc3a5b7
+[yri7] Fri Apr 22 20:17:18 2022 +0900 Create 유리초안.mdj 5aa463e
+[heejin8273] Fri Apr 22 16:00:59 2022 +0900 0422 : UseCaseDiagram 초안_고희진 09c31fb
+[Wadaha] Fri Apr 22 11:07:19 2022 +0900 0422 : 상훈초안 및 폴더정리 1afe99b
+[Wadaha] Thu Apr 21 13:14:53 2022 +0900 0421 : 이니셜 커밋 / star UML협업 테스트 955ab45
